@@ -3,7 +3,7 @@ import Button from '../Button';
 
 const Header = () => {
   return (
-    <div className="flex justify-between mb-20">
+    <div className="flex justify-between mb-20 mr-10">
       <div className=" bg-[#4B0CFF] flex flex-col justify-evenly items-end text-white rounded-[80px] w-1/2 -translate-x-52 -translate-y-14 -rotate-[20deg]">
         <p className="text-4xl mr-14 mt-3 rotate-[20deg] ">myagency.</p>
         <p className="text-4xl mr-20 w-56 rotate-[20deg] ">
@@ -24,7 +24,7 @@ const Header = () => {
           <p className="">Services</p>
           <Button
             type="button"
-            className="p-2 w-36 rounded-lg border-[#4B0CFF] text-[#4B0CFF]  border"
+            className="p-2 w-44 bg-purple-100 rounded-lg border-[#4B0CFF] text-[#4B0CFF]  border-2"
           >
             Contact Us
           </Button>

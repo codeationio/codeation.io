@@ -2,7 +2,7 @@ import Carousel from './carousel';
 
 const index = () => {
   return (
-    <div>
+    <div className="text-center" >
       <Carousel />
     </div>
   );

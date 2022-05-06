@@ -9,13 +9,13 @@ import Footer from '../components/Footer';
 
 export default function Home() {
   return (
-    <div className="max-w-7xl overflow-x-hidden w-screen" >
+    <div className="max-w-7xl overflow-x-hidden w-screen bg-red-50 font-Poppins">
       <Header />
       <Services />
       <Projects />
       <Team />
       <Work />
-      {/* <Review /> */}
+      <Review />
       <Contact />
       <Footer />
     </div>
