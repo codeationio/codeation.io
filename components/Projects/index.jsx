@@ -1,68 +1,61 @@
 import Image from 'next/image';
 import Button from '../Button';
 
+const projects = [
+  {
+    id: 1,
+    imageUrl: '/images/React-Projects.png',
+    title: '#1 Web WebDesign',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.nothing, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.nothing',
+    btnName: 'Contact Us',
+  },
+  {
+    id: 2,
+    imageUrl: '/images/React-Projects1.jpg',
+    title: '#2 Web WebDesign',
+    description:
+      'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.nothing, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.nothing',
+    btnName: 'Contact Us',
+  },
+];
+
 const index = () => {
   return (
     <div className="mb-40">
       <p className="text-5xl text-gray-600/50 mb-24 ml-32 ">RecentProjects</p>
       <div>
-        <div className="flex odd:flex-row even:flex-row-reverse ">
-          <div className="w-1/2">
-            <Image
-              src="/images/React-Projects.png"
-              alt="project1"
-              width="100%"
-              height="100%"
-              layout="responsive"
-            />
-          </div>
-          <div className="flex flex-col justify-around w-1/2">
-            <p className=" text-5xl font-semibold text-blue-700 ml-12">
-              #1 Web WebDesign{' '}
-            </p>
-            <p className="w-96 ml-12 text-[#636363] text-xl">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor.nothing, Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit. Aenean commodo ligula eget
-              dolor.nothing
-            </p>
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className="flex odd:flex-row even:flex-row-reverse "
+          >
+            <div className="w-1/2">
+              <Image
+                src={project.imageUrl}
+                alt="/.../"
+                width="100%"
+                height="100%"
+                layout="responsive"
+              />
+            </div>
+            <div className="flex flex-col justify-around w-1/2">
+              <p className=" text-5xl font-semibold text-blue-700 ml-12">
+                {project.title}
+              </p>
+              <p className="w-96 ml-12 text-[#636363] text-xl">
+                {project.description}
+              </p>
 
-            <Button
-              type="button"
-              className="border-2 ml-12 font-semibold p-2 w-36 rounded-lg border-[#4B0CFF] text-[#4B0CFF]"
-            >
-              Contact Us
-            </Button>
+              <Button
+                type="button"
+                className="border-2 ml-12 font-semibold p-2 w-36 rounded-lg border-primary text-primary"
+              >
+                {project.btnName}
+              </Button>
+            </div>
           </div>
-        </div>
-        <div className="flex justify-around odd:flex-row even:flex-row-reverse">
-          <div className="w-1/2">
-            <Image
-              src="/images/React-Projects1.jpg"
-              alt="project1"
-              width="100%"
-              height="100%"
-              layout="responsive"
-            />
-          </div>
-          <div className="flex flex-col w-1/2 justify-evenly">
-            <p className="text-5xl ml-12 font-semibold text-blue-700">
-              #2 Web WebDesign{' '}
-            </p>
-            <p className="w-96 ml-12 text-[#636363] text-xl p-3">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-              commodo ligula eget dolor.nothing, Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit. Aenean commodo ligula eget
-              dolor.nothing
-            </p>
-            <Button
-              type="button"
-              className="border-2 ml-12 font-semibold p-2 w-36 rounded-lg border-[#4B0CFF] text-[#4B0CFF]"
-            >
-              Contact Us
-            </Button>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );

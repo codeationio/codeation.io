@@ -23,8 +23,8 @@ const cardProps = [
     btnName: 'Contact Me',
   },
 ];
-const btnStyle = 'p-2 w-36 rounded-lg border-[#4B0CFF] text-[#4B0CFF] border-2';
-const titleStyle = ' font-medium text-3xl text-[#4B0CFF]';
+const btnStyle = 'p-2 w-36 rounded-lg border-primary text-primary border-2';
+const titleStyle = ' font-medium text-3xl text-primary';
 const cardStyle =
   'flex flex-col bg-purple-50/50 justify-between items-center w-[25%] text-center text-black p-12  shadow shadow-gray-900 rounded-3xl h-[450px]';
 const imageWidth = '200';

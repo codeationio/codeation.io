@@ -6,10 +6,11 @@ import Team from '../components/Team';
 import Work from '../components/Work';
 import Contact from '../components/Contact';
 import Footer from '../components/Footer';
+import { useEffect } from 'react';
 
 export default function Home() {
   return (
-    <div className="max-w-7xl overflow-x-hidden w-screen bg-red-50 font-Poppins">
+    <div className="max-w-7xl overflow-x-hidden w-screen bg-gray-100 font-Poppins">
       <Header />
       <Services />
       <Projects />

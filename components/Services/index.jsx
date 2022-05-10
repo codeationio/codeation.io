@@ -28,9 +28,9 @@ const index = () => {
     },
   ];
   const titleStyle = ' font-medium text-2xl';
-  const btnStyle = 'bg-[#4B0CFF] border border-white rounded-md p-2 w-48';
+  const btnStyle = 'bg-primary border border-white rounded-md p-2 w-48';
   const cardStyle =
-    'flex flex-col justify-around items-center w-[30%] bg-[#4B0CFF] text-center text-white p-8 rounded-xl h-[500px]';
+    'flex flex-col justify-around items-center w-[30%] bg-primary text-center text-white p-8 rounded-xl h-[500px]';
   const imageWidth = '90';
   const imageHeight = '90';
 
