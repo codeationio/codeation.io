@@ -64,9 +64,10 @@ const Form = () => {
             />
             <Button
               type="submit"
-              className="border w-auto p-[24px] text-2xl bg-[#4B0CFF] font-medium rounded-3xl text-white flex justify-center items-end"
+              className="border w-auto p-[24px] text-2xl bg-primary font-medium rounded-3xl text-white flex justify-center items-end"
             >
-             Send Message<RiSendPlaneFill />
+              Send Message
+              <RiSendPlaneFill />
             </Button>
           </div>
         </div>
