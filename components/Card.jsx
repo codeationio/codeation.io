@@ -12,7 +12,7 @@ const Card = ({imageUrl, imageHeight, imageWidth,  title, description, btnName, 
           height={imageHeight}
         />
         <h2 className={titleStyle}>{title}</h2>
-        <p className="text-xl">
+        <p className="text-lg">
           {description}
         </p>
         <Button  type="button" className={btnStyle}>{btnName}

@@ -1,34 +1,34 @@
-import Card from '../Card';
+import Card from "../Card";
 
 const cardProps = [
   {
     id: 1,
-    imageUrl: '/images/profile1.jpg',
-    name: 'Jorge Gill',
-    description: 'Agency CEO',
-    btnName: 'Contact Me',
+    imageUrl: "/images/profile1.jpg",
+    name: "Jorge Gill",
+    description: "Agency CEO",
+    btnName: "Contact Me",
   },
   {
     id: 2,
-    imageUrl: '/images/profile1.jpg',
-    name: 'Jorge Gill',
-    description: 'Agency CEO',
-    btnName: 'Contact Me',
+    imageUrl: "/images/profile1.jpg",
+    name: "Jorge Gill",
+    description: "Agency CEO",
+    btnName: "Contact Me",
   },
   {
     id: 3,
-    imageUrl: '/images/profile1.jpg',
-    name: 'Jorge Gill',
-    description: 'Agency CEO',
-    btnName: 'Contact Me',
+    imageUrl: "/images/profile1.jpg",
+    name: "Jorge Gill",
+    description: "Agency CEO",
+    btnName: "Contact Me",
   },
 ];
-const btnStyle = 'p-2 w-36 rounded-lg border-primary text-primary border-2';
-const titleStyle = ' font-medium text-3xl text-primary';
+const btnStyle = "p-2 w-36 rounded-lg border-primary text-primary border-2";
+const titleStyle = " font-medium text-3xl text-primary";
 const cardStyle =
-  'flex flex-col bg-purple-50/50 justify-between items-center w-[25%] text-center text-black p-12  shadow shadow-gray-900 rounded-3xl h-[450px]';
-const imageWidth = '200';
-const imageHeight = '200';
+  "flex flex-col bg-purple-50/50 justify-between items-center w-[25%] text-center text-black p-12 border shadow-md hover:shadow-xl shadow-gray-400 rounded-3xl h-[450px]";
+const imageWidth = "170";
+const imageHeight = "170";
 
 const index = () => {
   return (

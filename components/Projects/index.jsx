@@ -43,7 +43,7 @@ const index = () => {
               <p className=" text-5xl font-semibold text-blue-700 ml-12">
                 {project.title}
               </p>
-              <p className="w-96 ml-12 text-[#636363] text-xl">
+              <p className="w-96 ml-12 text-[#636363] mb-40 text-xl">
                 {project.description}
               </p>
 

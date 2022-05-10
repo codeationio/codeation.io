@@ -27,12 +27,12 @@ const index = () => {
       btnName: 'Read More',
     },
   ];
-  const titleStyle = ' font-medium text-2xl';
-  const btnStyle = 'bg-primary border border-white rounded-md p-2 w-48';
+  const titleStyle = ' font-semibold text-xl';
+  const btnStyle = 'bg-primary font-medium border-2 border-white rounded-md p-2 w-1/2';
   const cardStyle =
     'flex flex-col justify-around items-center w-[30%] bg-primary text-center text-white p-8 rounded-xl h-[500px]';
-  const imageWidth = '90';
-  const imageHeight = '90';
+  const imageWidth = '70';
+  const imageHeight = '70';
 
   return (
     <div className="mb-40 max-w-5xl ml-[12%] ">
