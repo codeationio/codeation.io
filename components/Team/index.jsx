@@ -33,7 +33,7 @@ const imageHeight = "170";
 const index = () => {
   return (
     <div className=" mb-32 max-w-5xl ml-[12%] ">
-      <p className="text-5xl text-gray-600/50 mb-28 ">Our Team</p>
+      <p className="text-header text-gray-600/50 mb-28 ">Our Team</p>
       <div className="flex justify-around shadow- mt-12 ">
         {cardProps.map((item) => (
           <Card

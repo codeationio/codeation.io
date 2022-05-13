@@ -11,14 +11,14 @@ const Header = () => {
         </p>
         <Button
           type="button"
-          className="p-2 w-40 mr-56 rotate-[20deg] rounded-xl  border-white border-2"
+          className="p-3 w-44 mr-52 rotate-[20deg] text-xl rounded-xl  border-white border-2"
         >
           Contact Us
         </Button>
       </div>
 
       <div className="w-1/2">
-        <div className="text-2xl mt-8 flex justify-between items-baseline ">
+        <div className="text-2xl mt-8 flex text-gray-700 justify-between items-baseline ">
           <p className="cursor-pointer">Home</p>
           <p className="cursor-pointer">About Us</p>
           <p className="cursor-pointer">Services</p>

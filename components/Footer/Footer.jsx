@@ -11,13 +11,13 @@ const Footer = () => {
   return (
     <div className="flex justify-around bg-[#100052] text-white items-center h-96">
       <div className="text-center">
-        <p className="text-6xl mb-3 ">myagency.</p>
+        <p className="text-header mb-3 ">myagency.</p>
         <div className="flex justify-center items-center ">
           {logo.map((item) => (
             <Image
               src={item.src}
-              width="40"
-              height="40"
+              width="45"
+              height="45"
               alt="/.../"
               key={item.id}
             />

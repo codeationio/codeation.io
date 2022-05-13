@@ -17,6 +17,7 @@
     "react-dom": "18.1.0",
     "react-icons": "^4.3.1",
     "react-rating-stars-component": "^2.2.0",
+    "swiffy-slider": "^1.5.3",
     "tw-elements": "^1.0.0-alpha12"
   },
   "devDependencies": {

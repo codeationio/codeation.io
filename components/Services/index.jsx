@@ -36,7 +36,7 @@ const index = () => {
 
   return (
     <div className="mb-40 max-w-5xl ml-[12%] ">
-      <p className="text-5xl text-gray-600/50">Our Services</p>
+      <p className="text-header text-gray-600/50">Our Services</p>
       <div className="flex justify-between mt-20">
         {cardProps.map((item) => (
           <Card

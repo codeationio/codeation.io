@@ -20,7 +20,7 @@ const Form = () => {
   };
   return (
     <div>
-      <p className="text-5xl text-center h-[100px] font-normal mb-5">
+      <p className="text-header text-center h-[100px] font-normal mb-5">
         Have Some Questions?
       </p>
       <form onSubmit={registerUser}>
@@ -64,7 +64,7 @@ const Form = () => {
             />
             <Button
               type="submit"
-              className="border w-auto h-24 p-6 text-2xl bg-primary font-medium rounded-3xl text-white flex justify-center items-end"
+              className="border w-auto h-24 p-6 text-2xl bg-primary font-medium rounded-3xl text-white flex justify-center items-center"
             >
               Send Message
               <RiSendPlaneFill />

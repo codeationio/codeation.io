@@ -23,7 +23,7 @@ const projects = [
 const index = () => {
   return (
     <div className="mb-40">
-      <p className="text-5xl text-gray-600/50 mb-24 ml-32 ">RecentProjects</p>
+      <p className="text-header text-gray-600/50 mb-24 ml-32 ">RecentProjects</p>
       <div>
         {projects.map((project) => (
           <div
@@ -40,7 +40,7 @@ const index = () => {
               />
             </div>
             <div className="flex flex-col justify-around w-1/2">
-              <p className=" text-5xl font-semibold text-blue-700 ml-12">
+              <p className=" text-header font-semibold text-blue-700 ml-12">
                 {project.title}
               </p>
               <p className="w-96 ml-12 text-[#636363] mb-40 text-xl">

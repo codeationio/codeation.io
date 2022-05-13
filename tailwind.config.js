@@ -19,6 +19,9 @@ module.exports = {
         primary: "#4B0CFF",
         textGray: "",
       },
+      fontSize: {
+        header: "45px"
+      }
     },
   },
 };
