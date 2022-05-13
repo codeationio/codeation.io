@@ -19,7 +19,7 @@ const images = [
 
 const index = () => {
   return (
-    <div className=" p-4 bg-gray-300 flex justify-around  mb-10 ">
+    <div className=" p-4 bg-gray-300 flex justify-around  mb-32 ">
       {images.map((img) => (
         <Image key={img.id} src={img.title} alt={img.title} width={img.width ?? '200'} height={img.height ?? '200'} />
       ))}

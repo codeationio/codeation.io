@@ -20,7 +20,7 @@ const Form = () => {
   };
   return (
     <div>
-      <p className="text-5xl text-center font-normal mb-5">
+      <p className="text-5xl text-center h-[100px] font-normal mb-5">
         Have Some Questions?
       </p>
       <form onSubmit={registerUser}>
@@ -32,7 +32,7 @@ const Form = () => {
               autoComplete="name"
               required
               placeholder="Email Here"
-              className="w-11/12 h-20 mb-5 rounded-3xl p-6"
+              className="w-11/12 h-24 mb-5 rounded-3xl p-6"
             />
             <input
               name="sub1"
@@ -40,7 +40,7 @@ const Form = () => {
               autoComplete="name"
               required
               placeholder="Your Subject"
-              className=" w-11/12 h-20 mb-5 rounded-3xl p-6"
+              className=" w-11/12 h-24 mb-5 rounded-3xl p-6"
             />
             <input
               id="sub1"
@@ -49,7 +49,7 @@ const Form = () => {
               autoComplete="name"
               required
               placeholder="Your Subject"
-              className="h-20 w-11/12 mb-5 rounded-3xl p-6"
+              className="h-24 w-11/12 mb-5 rounded-3xl p-6"
             />
           </div>
           <div className="flex flex-col w-1/2 ">
@@ -64,7 +64,7 @@ const Form = () => {
             />
             <Button
               type="submit"
-              className="border w-auto p-[24px] text-2xl bg-primary font-medium rounded-3xl text-white flex justify-center items-end"
+              className="border w-auto h-24 p-6 text-2xl bg-primary font-medium rounded-3xl text-white flex justify-center items-end"
             >
               Send Message
               <RiSendPlaneFill />
