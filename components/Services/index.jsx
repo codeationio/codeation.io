@@ -30,12 +30,12 @@ const index = () => {
   const titleStyle = ' font-semibold text-xl';
   const btnStyle = 'bg-primary font-medium border-2 border-white rounded-md p-2 w-1/2';
   const cardStyle =
-    'flex flex-col justify-around items-center w-[30%] bg-primary text-center text-white p-8 rounded-xl h-[500px]';
+    'flex flex-col justify-around items-center w-30 bg-primary text-center text-white p-8 rounded-xl h-500';
   const imageWidth = '70';
   const imageHeight = '70';
 
   return (
-    <div className="mb-40 max-w-5xl ml-[12%] ">
+    <div id="services" className="mb-40 max-w-5xl ml-12 ">
       <p className="text-big text-secondary">Our Services</p>
       <div className="flex justify-between mt-20">
         {cardProps.map((item) => (

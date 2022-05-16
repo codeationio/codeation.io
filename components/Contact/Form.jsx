@@ -20,12 +20,12 @@ const Form = () => {
   };
   return (
     <div>
-      <p className="text-big text-center h-[100px] font-normal mb-5">
+      <p className="text-big text-center h-28 font-normal mb-5">
         Have Some Questions?
       </p>
       <form onSubmit={registerUser}>
-        <div className="flex flex-row justify-between mt-12 ">
-          <div className="flex flex-col text-xl w-1/2 ">
+        <div className="flex flex-row justify-between mt-12">
+          <div className="flex flex-col text-xl w-1/2">
             <input
               name="email"
               type="text"

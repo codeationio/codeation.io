@@ -18,15 +18,22 @@ module.exports = {
         black: "#000",
         primary: "#4B0CFF",
         secondary: "rgb(75 85 99 / 0.5)",
-        textPrimary:"#636363"
+        textPrimary: "#636363",
+        dark: "#100052",
       },
       fontSize: {
-        big: "45px"
+        big: "45px",
       },
-      fontWeight:{
-        
-
+      height: {
+        500: " 32rem",
+        440: "27rem",
       },
+      margin: {
+        12: "12%",
+      },
+      width:{
+        30:"30%"
+      }
     },
   },
 };

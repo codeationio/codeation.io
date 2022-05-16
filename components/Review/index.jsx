@@ -38,7 +38,7 @@ const Carousel = () => {
 
   return (
     <div>
-      <div className="swiffy-slider h-[500px] ">
+      <div className="swiffy-slider h-500">
         <ul className="slider-container">
           {carouselContent.map((item) => (
             <li key={item.id} className="flex flex-col items-center">
@@ -64,7 +64,7 @@ const Carousel = () => {
                   activeColor="#ffd700"
                   value={ratings}
                 />
-                <p className="text-[#636363] max-w-2xl text-md mt-5">{item.description}
+                <p className="text-textPrimary max-w-2xl text-md mt-5">{item.description}
                 </p>
               </div>
             </li>

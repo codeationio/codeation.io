@@ -3,7 +3,7 @@ import Button from "../Button";
 
 const Header = () => {
   return (
-    <div className="flex justify-between mb-20 mr-10">
+    <div id="home" className="flex justify-between mb-20 mr-10">
       <div className=" bg-primary flex flex-col justify-evenly items-end text-white rounded-[80px] w-1/2 -translate-x-52 -translate-y-14 -rotate-[20deg]">
         <p className="text-4xl mr-6 mt-12 rotate-[20deg] ">myagency.</p>
         <p className="text-4xl mr-20 w-56 rotate-[20deg] ">
@@ -19,9 +19,9 @@ const Header = () => {
 
       <div className="w-1/2">
         <div className="text-2xl mt-8 flex text-textPrimary justify-between items-baseline ">
-          <p className="cursor-pointer">Home</p>
-          <p className="cursor-pointer">About Us</p>
-          <p className="cursor-pointer">Services</p>
+          <a href="#home" className="cursor-pointer">Home</a>
+          <a href="#aboutUs" className="cursor-pointer">About Us</a>
+          <a href="#services" className="cursor-pointer">Services</a>
           <Button
             type="button"
             className="p-2 w-2/6 bg-purple-100 rounded-lg border-primary text-primary  border-2"

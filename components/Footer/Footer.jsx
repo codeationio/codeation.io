@@ -9,7 +9,7 @@ const logo = [
 
 const Footer = () => {
   return (
-    <div className="flex justify-around bg-[#100052] text-white items-center h-96">
+    <div className="flex justify-around bg-dark text-white items-center h-96">
       <div className="text-center">
         <p className="text-big mb-3 ">myagency.</p>
         <div className="flex justify-center items-center ">

@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }) {
       {/* <Script src="https://www.google-analytics.com/analytics.js" /> */}
       <Script
         src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.5.3/dist/js/swiffy-slider.min.js"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
         defer
       />
       <link
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
         rel="stylesheet"
         crossOrigin="anonymous"
       />
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </div>
   );
 }
