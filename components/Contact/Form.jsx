@@ -20,7 +20,7 @@ const Form = () => {
   };
   return (
     <div>
-      <p className="text-header text-center h-[100px] font-normal mb-5">
+      <p className="text-big text-center h-[100px] font-normal mb-5">
         Have Some Questions?
       </p>
       <form onSubmit={registerUser}>

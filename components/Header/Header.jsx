@@ -18,7 +18,7 @@ const Header = () => {
       </div>
 
       <div className="w-1/2">
-        <div className="text-2xl mt-8 flex text-gray-700 justify-between items-baseline ">
+        <div className="text-2xl mt-8 flex text-textPrimary justify-between items-baseline ">
           <p className="cursor-pointer">Home</p>
           <p className="cursor-pointer">About Us</p>
           <p className="cursor-pointer">Services</p>

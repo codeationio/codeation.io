@@ -30,7 +30,7 @@ const carouselContent = [
 ];
 
 const Carousel = () => {
-  const [ratings, setRatings] = useState(0)
+  const [ratings, setRatings] = useState(0);
   const ratingChanged = (newRating) => {
     console.log({ newRating });
     setRatings(newRating);
@@ -40,99 +40,35 @@ const Carousel = () => {
     <div>
       <div className="swiffy-slider h-[500px] ">
         <ul className="slider-container">
-          <li className="flex flex-col items-center" >
-            <div className="border shadow-2xl shadow-slate-500/70 p-14 w-1/2 rounded-2xl">
-              <div className="flex items-center mb-5 ">
-                <Image
-                  src="/images/profile1.jpg"
-                  alt="../"
-                  width="100px"
-                  height="100px"
-                />
-                <div>
-                  <div className="ml-10 text-2xl font-extrabold text-primary ">
-                    <p> company Name 1</p>
-                    <p>- client Name 1</p>
+          {carouselContent.map((item) => (
+            <li key={item.id} className="flex flex-col items-center">
+              <div className="border shadow-2xl shadow-slate-500/70 p-14 w-1/2 rounded-2xl">
+                <div className="flex items-center mb-5 ">
+                  <Image
+                    src={item.profilePicture}
+                    alt="../"
+                    width="100px"
+                    height="100px"
+                  />
+                  <div>
+                    <div className="ml-10 text-2xl font-extrabold text-primary ">
+                      <p> {item.companyName}</p>
+                      <p>- {item.clientName}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <ReactStars
-                count={5}
-                onChange={ratingChanged}
-                size={30}
-                activeColor="#ffd700"
-                value={ratings}
-              />
-              <p className="text-[#636363] max-w-2xl text-md mt-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                soluta laudantium. Ab tenetur suscipit voluptatum, quidem
-                aliquam, voluptas asperiores, in molestias quibusdam dignissimos
-                architecto ex ullam voluptates eos placeat nemo!
-              </p>
-            </div>
-          </li>
-          <li className="flex flex-col items-center" >
-            <div className="border shadow-2xl shadow-slate-500/70 p-14 w-1/2 rounded-2xl">
-              <div className="flex items-center mb-5 ">
-                <Image
-                  src="/images/profile1.jpg"
-                  alt="../"
-                  width="100px"
-                  height="100px"
+                <ReactStars
+                  count={5}
+                  onChange={ratingChanged}
+                  size={30}
+                  activeColor="#ffd700"
+                  value={ratings}
                 />
-                <div>
-                  <div className="ml-10 text-2xl font-extrabold text-primary ">
-                    <p> company Name 2</p>
-                    <p>- client Name 2</p>
-                  </div>
-                </div>
+                <p className="text-[#636363] max-w-2xl text-md mt-5">{item.description}
+                </p>
               </div>
-              <ReactStars
-                count={5}
-                onChange={ratingChanged}
-                size={30}
-                activeColor="#ffd700"
-                value={ratings}
-              />
-              <p className="text-[#636363] max-w-2xl text-md mt-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                soluta laudantium. Ab tenetur suscipit voluptatum, quidem
-                aliquam, voluptas asperiores, in molestias quibusdam dignissimos
-                architecto ex ullam voluptates eos placeat nemo!
-              </p>
-            </div>
-          </li>
-          <li className="flex flex-col items-center" >
-            <div className="border shadow-2xl shadow-slate-500/70 p-14 w-1/2 rounded-2xl">
-              <div className="flex items-center mb-5 ">
-                <Image
-                  src="/images/profile1.jpg"
-                  alt="../"
-                  width="100px"
-                  height="100px"
-                />
-                <div>
-                  <div className="ml-10 text-2xl font-extrabold text-primary ">
-                    <p> company Name 3</p>
-                    <p>- client Name 3</p>
-                  </div>
-                </div>
-              </div>
-              <ReactStars
-                count={5}
-                onChange={ratingChanged}
-                size={30}
-                activeColor="#ffd700"
-                value={ratings}
-              />
-              <p className="text-[#636363] max-w-2xl text-md mt-5">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
-                soluta laudantium. Ab tenetur suscipit voluptatum, quidem
-                aliquam, voluptas asperiores, in molestias quibusdam dignissimos
-                architecto ex ullam voluptates eos placeat nemo!
-              </p>
-            </div>
-          </li>
+            </li>
+          ))}
         </ul>
 
         <button type="button" className="slider-nav"></button>

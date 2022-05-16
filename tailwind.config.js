@@ -7,7 +7,7 @@ module.exports = {
   ],
   // plugins: [require('tw-elements/dist/plugin')],
   // plugins: [require("flowbite/plugin")],
-  plugins: [require("daisyui")],
+  // plugins: [require("daisyui")],
 
   theme: {
     fontFamily: {
@@ -17,11 +17,16 @@ module.exports = {
       colors: {
         black: "#000",
         primary: "#4B0CFF",
-        textGray: "",
+        secondary: "rgb(75 85 99 / 0.5)",
+        textPrimary:"#636363"
       },
       fontSize: {
-        header: "45px"
-      }
+        big: "45px"
+      },
+      fontWeight:{
+        
+
+      },
     },
   },
 };
