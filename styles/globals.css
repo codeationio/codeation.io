@@ -8,5 +8,5 @@ html {
 }
 
 body {
-  @apply bg-purple-100;
+  @apply bg-slate-300/20;
 }

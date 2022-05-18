@@ -2,12 +2,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    // "./node_modules/tw-elements/dist/js/**/*.js",
-    // "./node_modules/flowbite/**/*.js"
   ],
-  // plugins: [require('tw-elements/dist/plugin')],
-  // plugins: [require("flowbite/plugin")],
-  // plugins: [require("daisyui")],
 
   theme: {
     fontFamily: {
@@ -16,7 +11,7 @@ module.exports = {
     extend: {
       colors: {
         black: "#000",
-        primary: "#4B0CFF",
+        primary: "#86c4e8",
         secondary: "rgb(75 85 99 / 0.5)",
         textPrimary: "#636363",
         dark: "#100052",
@@ -31,9 +26,9 @@ module.exports = {
       margin: {
         12: "12%",
       },
-      width:{
-        30:"30%"
-      }
+      width: {
+        30: "30%",
+      },
     },
   },
 };

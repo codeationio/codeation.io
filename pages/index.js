@@ -10,14 +10,14 @@ import { useEffect } from "react";
 
 export default function Home() {
   return (
-    <div className="max-w-7xl overflow-x-hidden w-screen bg-gray-100 font-Poppins">
+    <div className="max-w-7xl overflow-x-hidden w-screen bg-white font-Poppins">
       <Header />
       <Services />
       <Projects />
       <Team />
       <Work />
       <Review />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );

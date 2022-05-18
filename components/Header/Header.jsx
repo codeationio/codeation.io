@@ -24,7 +24,7 @@ const Header = () => {
           <a href="#services" className="cursor-pointer">Services</a>
           <Button
             type="button"
-            className="p-2 w-2/6 bg-purple-100 rounded-lg border-primary text-primary  border-2"
+            className="p-2 w-2/6 bg-blue-200/20 rounded-lg border-primary text-primary  border-2"
           >
             Contact Us
           </Button>

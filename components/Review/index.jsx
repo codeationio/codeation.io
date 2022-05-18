@@ -5,7 +5,7 @@ import { useState } from "react";
 const carouselContent = [
   {
     id: 1,
-    profilePicture: "/images/profile1.jpg",
+    profilePicture: "/images/client.svg",
     companyName: "Company Name 1",
     clientName: "Client Name 1",
     description:
@@ -13,7 +13,7 @@ const carouselContent = [
   },
   {
     id: 2,
-    profilePicture: "/images/profile1.jpg",
+    profilePicture: "/images/client.svg",
     companyName: "Company Name 2",
     clientName: "Client Name 2",
     description:
@@ -21,7 +21,7 @@ const carouselContent = [
   },
   {
     id: 3,
-    profilePicture: "/images/profile1.jpg",
+    profilePicture: "/images/client.svg",
     companyName: "Company Name 3",
     clientName: "Client Name 3",
     description:
@@ -37,13 +37,13 @@ const Carousel = () => {
   };
 
   return (
-    <div>
-      <div className="swiffy-slider h-500">
-        <ul className="slider-container">
+    <div className="h-[500px] flex items-center  " >
+      <div className="swiffy-slider h-full p-20 ">
+        <ul className="slider-container w-auto ">
           {carouselContent.map((item) => (
             <li key={item.id} className="flex flex-col items-center">
-              <div className="border shadow-2xl shadow-slate-500/70 p-14 w-1/2 rounded-2xl">
-                <div className="flex items-center mb-5 ">
+              <div className="border shadow-lg  shadow-slate-700/20 p-12 w-1/2 rounded-2xl">
+                <div className="flex items-center  ">
                   <Image
                     src={item.profilePicture}
                     alt="../"

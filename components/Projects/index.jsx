@@ -4,16 +4,16 @@ import Button from '../Button';
 const projects = [
   {
     id: 1,
-    imageUrl: '/images/React-Projects.png',
-    title: '#1 Web WebDesign',
+    imageUrl: '/images/project1.svg',
+    title: '#1 Next Js ',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.nothing, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.nothing',
     btnName: 'Contact Us',
   },
   {
     id: 2,
-    imageUrl: '/images/React-Projects1.jpg',
-    title: '#2 Web WebDesign',
+    imageUrl: '/images/project2.svg',
+    title: '#2 Tailwind CSS',
     description:
       'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.nothing, Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.nothing',
     btnName: 'Contact Us',
@@ -28,9 +28,9 @@ const index = () => {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex odd:flex-row even:flex-row-reverse "
+            className="flex odd:flex-row odd:bg-slate-200 even:flex-row-reverse even:bg-slate-300/70"
           >
-            <div className="w-1/2">
+            <div className="w-1/2 ">
               <Image
                 src={project.imageUrl}
                 alt="/.../"
@@ -40,7 +40,7 @@ const index = () => {
               />
             </div>
             <div className="flex flex-col justify-around w-1/2">
-              <p className=" text-big font-semibold text-blue-700 ml-12">
+              <p className=" text-big font-semibold text-primary ml-12">
                 {project.title}
               </p>
               <p className="w-96 ml-12 text-textPrimary mb-40 text-xl">
