@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import { FC } from 'react';
-import Hero from './home';
+
+import Hero from '../components/Hero';
 
 const index: FC = () => {
   return (

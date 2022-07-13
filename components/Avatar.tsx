@@ -1,12 +1,12 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 
-type Props ={
-  children:any
-}
+type Props = {
+  children: ReactNode;
+};
 
 const Avatar: FC<Props> = ({ children }) => {
   return (
-    <div className="rounded-full h-24 w-24 flex items-center justify-center m-4 border-dashed border bg-blue-400">
+    <div className="bg-blue-400 m-4 flex h-24 w-24 items-center justify-center rounded-full border border-dashed">
       {children}
     </div>
   );
