@@ -17,6 +17,7 @@ module.exports = {
         card: '0px 3.37869px 6.75738px rgba(15, 18, 33, 0.1)'
       },
       fontSize: {
+        '5.5a': '1.375rem',
         'card-description': [
           '1rem',
           {
@@ -31,8 +32,17 @@ module.exports = {
             lineHeight: '2rem'
           }
         ]
+      },
+      height: {
+        '0.5a': '0.125rem'
+      },
+      lineHeight: {
+        '11a': '3.375rem'
+      },
+      maxWidth: {
+        '8xl': '90rem'
       }
     },
-    fontFamily: ['Montserrat', 'sans-serif']
+    fontFamily: { serif: ['Montserrat', 'sans-serif'] }
   }
 };
