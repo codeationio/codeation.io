@@ -26,15 +26,15 @@ const cardProps = [
 const btnStyle = "p-2 w-36 rounded-lg border-primary text-primary border-2";
 const titleStyle = " font-medium text-2xl text-primary";
 const cardStyle =
-  "flex flex-col justify-between items-center w-1/4 text-center text-black p-12  shadow-xl  hover:shadow-2xl shadow-gray-350 rounded-3xl h-440";
+  "flex flex-col justify-evenly items-center w-1/6 h-400 rounded-3xl shadow-5xl";
 const imageWidth = "170";
 const imageHeight = "170";
 
 const index = () => {
   return (
-    <div id="aboutUs" className=" mb-32 max-w-5xl ml-12 ">
-      <p className="text-big text-secondary mb-28 ">Our Team</p>
-      <div className="flex justify-around shadow- mt-12 ">
+    <div id="aboutUs" className=" mb-32 ">
+      <p className="text-big text-primary mb-20 ml-12">Our Team</p>
+      <div className="flex justify-evenly">
         {cardProps.map((item) => (
           <Card
             key={item.id}

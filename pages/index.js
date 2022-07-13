@@ -10,7 +10,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   return (
-    <div className="max-w-7xl overflow-x-hidden w-screen bg-white font-Poppins">
+    <div className="max-w-screen-2xl overflow-x-hidden w-screen bg-white font-Poppins">
       <Header />
       <Services />
       <Projects />

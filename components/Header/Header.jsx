@@ -5,13 +5,13 @@ const Header = () => {
   return (
     <div id="home" className="flex justify-between mb-20 mr-10">
       <div className=" bg-primary flex flex-col justify-evenly items-end text-white rounded-[80px] w-1/2 -translate-x-52 -translate-y-14 -rotate-[20deg]">
-        <p className="text-4xl mr-6 mt-12 rotate-[20deg] ">myagency.</p>
-        <p className="text-4xl mr-20 w-56 rotate-[20deg] ">
+        <p className="text-4xl mr-24 mt-12 rotate-[20deg] ">myAgency.</p>
+        <p className="text-4xl mr-40 w-56 rotate-[20deg] ">
           We are the Best Agency For Web, App Development
         </p>
         <Button
           type="button"
-          className="p-3 w-44 mr-52 rotate-[20deg] text-xl rounded-xl  border-white border-2"
+          className="p-3 w-44 mr-72 rotate-[20deg] text-xl rounded-xl  border-white border-2"
         >
           Contact Us
         </Button>
@@ -24,7 +24,7 @@ const Header = () => {
           <a href="#services" className="cursor-pointer">Services</a>
           <Button
             type="button"
-            className="p-2 w-2/6 bg-blue-200/20 rounded-lg border-primary text-primary  border-2"
+            className="p-2 w-2/6 bg-blue-200/20 rounded-lg border-primary text-primary border-2"
           >
             Contact Us
           </Button>

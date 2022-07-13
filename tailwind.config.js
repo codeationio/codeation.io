@@ -11,17 +11,17 @@ module.exports = {
     extend: {
       colors: {
         black: "#000",
-        primary: "#86c4e8",
-        secondary: "rgb(75 85 99 / 0.5)",
+        primary: "#07689F",
+        secondary: "#A2D5F2",
         textPrimary: "#636363",
-        dark: "#100052",
+        dark: "#0E185F",
       },
       fontSize: {
         big: "45px",
       },
       height: {
         500: " 32rem",
-        440: "27rem",
+        400: "27rem",
       },
       margin: {
         12: "12%",
@@ -29,6 +29,10 @@ module.exports = {
       width: {
         30: "30%",
       },
+      boxShadow: {
+        // '5xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+        '5xl': '0 2px 8px 0 rgb(99 99 99 / 20%)',
+      }
     },
   },
 };

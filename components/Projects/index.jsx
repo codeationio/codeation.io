@@ -23,12 +23,12 @@ const projects = [
 const index = () => {
   return (
     <div className="mb-40">
-      <p className="text-big text-secondary mb-24 ml-32 ">RecentProjects</p>
+      <p className="text-big text-primary mb-24 ml-32 ">RecentProjects</p>
       <div>
         {projects.map((project) => (
           <div
             key={project.id}
-            className="flex odd:flex-row odd:bg-slate-200 even:flex-row-reverse even:bg-slate-300/70"
+            className="flex odd:flex-row  even:flex-row-reverse "
           >
             <div className="w-1/2 ">
               <Image
@@ -39,7 +39,7 @@ const index = () => {
                 layout="responsive"
               />
             </div>
-            <div className="flex flex-col justify-around w-1/2">
+            <div className="flex flex-col justify-around w-1/2 bg-slate-200/50">
               <p className=" text-big font-semibold text-primary ml-12">
                 {project.title}
               </p>

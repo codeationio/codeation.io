@@ -8,5 +8,5 @@ html {
 }
 
 body {
-  @apply bg-slate-300/20;
+  @apply bg-primary/10;
 }
