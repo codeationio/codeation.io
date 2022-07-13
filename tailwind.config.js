@@ -9,24 +9,30 @@ module.exports = {
       description: '#8896AB',
       'light-grey': '#F8F8F8',
       primary: '#3E8BFF',
-      textColor: '#4D5F7A'
+      textColor: '#4D5F7A',
+      white: '#FFFFFF'
     },
     extend: {
+      boxShadow: {
+        card: '0px 3.37869px 6.75738px rgba(15, 18, 33, 0.1)'
+      },
       fontSize: {
-        22: '1.375rem'
-      },
-      height: {
-        '2px': '0.125rem'
-      },
-      lineHeight: {
-        54: '3.375rem'
-      },
-      maxWidth: {
-        '8xl': '90rem'
-      },
-      width: {
-        inherit: 'inherit'
+        'card-description': [
+          '1rem',
+          {
+            fontWeight: 400,
+            lineHeight: '1.25rem'
+          }
+        ],
+        'card-title': [
+          '1.625rem',
+          {
+            fontWeight: 700,
+            lineHeight: '2rem'
+          }
+        ]
       }
-    }
+    },
+    fontFamily: ['Montserrat', 'sans-serif']
   }
 };
