@@ -1,7 +1,7 @@
 import Image from 'next/image';
 const Navbar = () => {
   return (
-    <div className="flex h-24 justify-center ">
+    <div className="flex h-24 max-w-full justify-between">
       <div className="flex w-1/2">
         <Image alt="Codeation.io" height={20} src="/images/codeation.io.svg" width={187} />
       </div>
