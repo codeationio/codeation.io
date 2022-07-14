@@ -1,10 +1,17 @@
 /** @type {import('tailwindcss').Config}  */
 
+const plugin = require('tailwindcss/plugin');
+
 module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
-  plugins: [],
+  plugins: [
+    plugin(({ addVariant }) => {
+      addVariant('alternate', '.alternate &');
+    })
+  ],
   theme: {
     colors: {
+      alternate: '#192E4D',
       black: '#0F1221',
       description: '#8896AB',
       'light-grey': '#F8F8F8',
