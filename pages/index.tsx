@@ -1,6 +1,7 @@
 import { ServicesCard } from 'components/Card';
 import Navbar from 'components/Navbar';
 import Section from 'components/Section';
+import Wrapper from 'components/Wrapper';
 import Head from 'next/head';
 import { FC } from 'react';
 
@@ -15,7 +16,7 @@ const cards: any[] = Array.from({ length: 9 }).fill({
 
 const Index: FC = () => {
   return (
-    <>
+    <Wrapper>
       <Head>
         <title>Codeation.io next-js template</title>
         <link href="/favicon.ico" rel="icon" />
@@ -24,7 +25,7 @@ const Index: FC = () => {
         <Navbar />
         <Hero />
       </Section>
-      <Section className="flex flex-wrap justify-between gap-8" title="Our Services">
+      <Section className="grid grid-cols-2 gap-5 lg:grid-cols-3 lg:gap-16" title="Our Services">
         {cards.map((card, index) => (
           <ServicesCard
             key={index}
@@ -34,7 +35,7 @@ const Index: FC = () => {
           />
         ))}
       </Section>
-    </>
+    </Wrapper>
   );
 };
 

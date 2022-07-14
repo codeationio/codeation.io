@@ -8,11 +8,7 @@ const CodeationApp: FC<{ Component: typeof Component; pageProps: any }> = ({
   Component,
   pageProps
 }) => {
-  return (
-    <Wrapper>
-      <Component {...pageProps} />
-    </Wrapper>
-  );
+  return <Component {...pageProps} />;
 };
 
 export default CodeationApp;

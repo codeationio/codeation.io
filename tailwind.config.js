@@ -32,6 +32,13 @@ module.exports = {
             fontWeight: 700,
             lineHeight: '2rem'
           }
+        ],
+        'card-title-sm': [
+          '1.125rem',
+          {
+            fontWeight: 700,
+            lineHeight: '1.375rem'
+          }
         ]
       },
       lineHeight: {
