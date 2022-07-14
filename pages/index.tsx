@@ -1,4 +1,5 @@
 import { ServicesCard } from 'components/Card';
+import Footer from 'components/Footer';
 import Navbar from 'components/Navbar';
 import Section from 'components/Section';
 import Wrapper from 'components/Wrapper';
@@ -35,6 +36,9 @@ const Index: FC = () => {
           />
         ))}
       </Section>
+      {/* <Section className="h-full bg-black text-white"> */}
+      <Footer />
+      {/* </Section> */}
     </Wrapper>
   );
 };

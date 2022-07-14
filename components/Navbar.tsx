@@ -7,7 +7,9 @@ const Navbar = () => {
         <h1 className="navbarH1">Home</h1>
         <h1 className="navbarH1">Services</h1>
         <h1 className="navbarH1">About us</h1>
-        <button className="navbarBtn">Contact us</button>
+        <button className="cursor-pointer rounded border-2 border-primary px-5 py-1 text-lg font-semibold text-primary">
+          Contact us
+        </button>
       </div>
     </div>
   );
