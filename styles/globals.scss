@@ -4,10 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-.navbarH1{
-  @apply text-lg text-textColor hover:text-primary cursor-pointer
+.navbarH1 {
+  @apply cursor-pointer text-lg text-textColor hover:text-primary;
 }
-.navbarBtn{
-  @apply text-primary border-primary border-2 px-5 py-1 rounded text-lg font-semibold cursor-pointer
+.navbarBtn {
+  @apply cursor-pointer rounded border-2 border-primary px-5 py-1 text-lg font-semibold text-primary;
 }
