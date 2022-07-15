@@ -13,7 +13,7 @@ const Hero = () => {
           <span className="ml-1 text-primary">BUSINESS</span>
         </h1>
         <span className="h-0.5 w-48 bg-primary" />
-        <p className="text-5.5 font-normal text-textColor lg:w-inherit">
+        <p className="text-5.5 font-normal text-grey lg:w-inherit">
           An All-in-One Platform for all your website and mobile development Needs.
         </p>
       </div>

@@ -3,7 +3,11 @@
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
-  content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+    './sections/**/*.{js,ts,jsx,tsx}'
+  ],
   plugins: [
     plugin(({ addVariant }) => {
       addVariant('alternate', '.alternate &');
@@ -14,9 +18,9 @@ module.exports = {
       alternate: '#192E4D',
       black: '#0F1221',
       description: '#8896AB',
+      grey: '#4D5F7A',
       'light-grey': '#F8F8F8',
       primary: '#3E8BFF',
-      textColor: '#4D5F7A',
       white: '#FFFFFF'
     },
     extend: {
