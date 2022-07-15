@@ -3,21 +3,23 @@ import Image from 'next/image';
 const Footer = () => {
   return (
     <div className=" grid h-80 w-screen grid-cols-2 flex-row gap-10 text-white ">
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly ">
         <div className="grid grid-flow-col grid-rows-3">
-          <Image alt="Codeation.io" height={20} src="/images/footer_logo.svg" width={187} />
-          <p>
+          <div className="col-span-4 mb-3 flex items-end">
+            <Image alt="Codeation.io" height={20} src="/images/footer_logo.svg" width={187} />
+          </div>
+          <p className="col-span-4 flex items-end">
             3rd Floor, F-88 , Phase 7,
             <br /> Industrial Area, Sector 73,
             <br /> SAS nagar, Punjab,
             <br /> India. 160055
           </p>
-          <div>
+          <div className="col-span-4 flex items-center">
             <Image alt="twitter" height={20} src="/images/twitter.svg" width={35} />
             <Image alt="linkedin" height={20} src="/images/linkedin.svg" width={35} />
           </div>
         </div>
-        <div className="grid grid-flow-col grid-rows-2 flex-col justify-center ">
+        <div className="grid grid-flow-col grid-rows-2">
           <div className="col-span-1 flex items-center">
             <h1 className="text-3xl  font-bold">Company</h1>
           </div>
