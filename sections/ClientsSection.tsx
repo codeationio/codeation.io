@@ -1,36 +1,24 @@
-import Client from 'components/Client';
+import Client, { ClientProps } from 'components/Client';
 import Section from 'components/Section';
 
-const clientsArr: any[] = [
+const clientsArr: Partial<ClientProps>[] = [
   {
-    height: '80',
-    url: '/images/client_1.svg',
-    width: '80'
+    logo: '/images/client_1.svg'
   },
   {
-    height: '80',
-    url: '/images/client_2.svg',
-    width: '160'
+    logo: '/images/client_2.svg'
   },
   {
-    height: '80',
-    url: '/images/client_3.svg',
-    width: '80'
+    logo: '/images/client_3.svg'
   },
   {
-    height: '80',
-    url: '/images/client_4.svg',
-    width: '80'
+    logo: '/images/client_4.svg'
   },
   {
-    height: '80',
-    url: '/images/client_5.svg',
-    width: '160'
+    logo: '/images/client_5.svg'
   },
   {
-    height: '80',
-    url: '/images/client_6.svg',
-    width: '160'
+    logo: '/images/client_6.svg'
   }
 ];
 
@@ -38,7 +26,13 @@ const ClientsSection = () => {
   return (
     <Section className="flex justify-evenly">
       {clientsArr.map((item, index) => (
-        <Client key={index} height={item.height} url={item.url} width={item.width} />
+        <Client
+          key={index}
+          height={item.height}
+          logo={item.logo}
+          name="client"
+          width={item.width}
+        />
       ))}
     </Section>
   );

@@ -1,5 +1,6 @@
 import Footer from 'components/Footer';
 import GetInTouch from 'components/GetInTouch';
+import Hero from 'components/Hero';
 import Navbar from 'components/Navbar';
 import Section from 'components/Section';
 import Wrapper from 'components/Wrapper';
@@ -11,14 +12,11 @@ import Team from 'sections/Team';
 import Testimonials from 'sections/Testimonials';
 import Work from 'sections/Work';
 
-import Hero from '../components/Hero';
-
 const Index: FC = () => {
   return (
     <>
       <Head>
         <title>Codeation.io - BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS</title>
-        <link href="/favicon.ico" rel="icon" />
       </Head>
       <Wrapper>
         <Section head>
@@ -27,8 +25,10 @@ const Index: FC = () => {
         </Section>
         <Services />
         <Work />
-        <Testimonials />
-        <ClientsSection />
+        <Section>
+          <Testimonials />
+          <ClientsSection />
+        </Section>
         <Team />
         <GetInTouch />
         <Footer />

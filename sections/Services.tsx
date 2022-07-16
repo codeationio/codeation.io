@@ -9,7 +9,10 @@ const cards: any[] = Array.from({ length: 9 }).fill({
 });
 
 const Services = () => (
-  <Section className="grid grid-cols-2 gap-5 lg:grid-cols-3 lg:gap-16" title="Our Services">
+  <Section
+    className="grid grid-cols-2 gap-5 lg:grid-cols-3 lg:gap-16"
+    id="services"
+    title="Our Services">
     {cards.map((card, index) => (
       <ServicesCard
         key={index}
