@@ -13,7 +13,7 @@ const valueItems = [
 const content = valueItems.map((post) =>
     <div key={post.id} className="flex flex-col items-center">
         <span className='mb-10	'>
-            <Image alt="values" height={20} src={`${post.icon}`} width={35} />
+            <Image alt="values" height={100} src={`${post.icon}`} width={100} />
         </span>
         <p className='w-2/4 text-card-description'>{post.content}</p>
     </div>
@@ -24,7 +24,7 @@ const About = () => (
         <Section head>
             <Navbar />
             <div className=" relative mx-auto flex-col-reverse justify-end  lg:flex-row lg:justify-center">
-                <div className='my-20 mx-16 flex flex-col space-y-20 text-white'>
+                <div className="bg-[url('/images/about_bg.jpg')] py-20 px-16 flex flex-col space-y-20 text-white">
                     <div className=' flex flex-col	 space-y-10'>
                         <h1 className='text-5xl font-bold '>
                             About Us
@@ -41,7 +41,7 @@ const About = () => (
                     </div>
                 </div>
                 <div className='absolute bottom-0 right-0 mr-16 translate-y-1/3'>
-                    <Image alt="Hero_Section" height={450} src="/images/about_hero.svg" width={450} />
+                    <Image alt="Hero_Section" height={500} src="/images/about_hero.svg" width={500} />
                 </div>
             </div>
             <div className="bg-white py-20 mx-auto flex flex-col-reverse justify-end  lg:flex-row lg:justify-center">
@@ -65,7 +65,7 @@ const About = () => (
                             <p>For the past 5 years, we have been providing top-notch business solutions to our customers that have helped us to be ‘partners of trust and choice ‘for them. Our highly technical team of designers, strategists, and developers works with you to optimize the best business model for you. 
                                 We believe that digital transformation is less about technology and more about people. We are geared to use the insights brought by technology to envision new business models, and markets and transform them into efficient ways of attracting, engaging, and delivering value to customers. We house a huge team of experts who are proficient in their forties and have razor-sharp insight that is result-driven and offers high returns on your marketing spend. So, no matter whatever business solutions we seek, we are here to provide you with the best solutions.</p>
                         </div>
-                        <div><Image alt="Hero_Section" height={500} src="/images/missio.svg" width={500} /></div>
+                        <div><Image alt="Hero_Section" height={500} src="/images/mission.svg" width={500} /></div>
                     </div>
                 </div>
             </div>
