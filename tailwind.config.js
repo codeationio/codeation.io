@@ -1,7 +1,8 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('tailwindcss').Config}  */
 
 const plugin = require('tailwindcss/plugin');
-
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
@@ -15,12 +16,12 @@ module.exports = {
   ],
   theme: {
     colors: {
-      alternate: '#192E4D',
       black: '#0F1221',
       description: '#8896AB',
       grey: '#4D5F7A',
       'light-grey': '#F8F8F8',
       primary: '#3E8BFF',
+      secondary: '#192E4D',
       white: '#FFFFFF'
     },
     extend: {
@@ -62,6 +63,11 @@ module.exports = {
         inherit: 'inherit'
       }
     },
-    fontFamily: { serif: ['Montserrat', 'sans-serif'] }
+    fontFamily: {
+      khula: ['Khula', ...defaultTheme.fontFamily.serif],
+      mono: ['Montserrat', ...defaultTheme.fontFamily.mono],
+      sans: ['Montserrat', ...defaultTheme.fontFamily.sans],
+      serif: ['Montserrat', ...defaultTheme.fontFamily.serif]
+    }
   }
 };
