@@ -10,9 +10,15 @@ const Navbar = () => {
         width={187}
       />
       <div className="ml-auto hidden items-center space-x-6 lg:flex">
-        <h1 className="navbarH1">Home</h1>
-        <h1 className="navbarH1">Services</h1>
-        <h1 className="navbarH1">About us</h1>
+        <h1 className="navbarH1">
+          <a href="/">Home</a>
+        </h1>
+        <h1 className="navbarH1">
+          <a href="/">Services</a>
+        </h1>
+        <h1 className="navbarH1">
+          <a href="/about">About us</a>
+        </h1>
         <button className="navbarBtn">Contact us</button>
       </div>
     </div>
