@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <div className=" grid h-80 w-screen grid-cols-2 flex-row gap-10 text-white ">
-      <div className="flex justify-evenly ">
+    <footer className="grid h-80 w-screen grid-cols-2 flex-row gap-10 text-white">
+      <div className="flex justify-evenly">
         <div className="grid grid-flow-col grid-rows-3">
           <div className="col-span-4 mb-3 flex items-end">
             <Image alt="Codeation.io" height={20} src="/images/footer_logo.svg" width={187} />
@@ -32,9 +32,9 @@ const Footer = () => {
       </div>
       <div className="flex flex-col items-center justify-evenly">
         <div className="flex w-full items-center justify-evenly">
-          <span className=" h-0.5 w-52 bg-white" />
+          <span className="h-0.5 w-52 bg-white" />
           <h1 className="text-3xl font-bold">Services</h1>
-          <span className=" h-0.5 w-52 bg-white" />
+          <span className="h-0.5 w-52 bg-white" />
         </div>
         <div className="flex w-full justify-around leading-8">
           <div>
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 export default Footer;

@@ -31,9 +31,9 @@ export const CardTitle: FCC = ({ children, className }) => {
 
 export const CardDescription: FCC = ({ children }) => {
   return (
-    <p className="hidden max-w-[250px] text-center text-card-description text-description lg:block">
+    <summary className="hidden max-w-[250px] text-center text-card-description text-description lg:block">
       {children}
-    </p>
+    </summary>
   );
 };
 
