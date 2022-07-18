@@ -3,18 +3,22 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <nav className="flex h-24 items-center">
-      <figure>
-        <Image
-          alt="Codeation.io"
-          className="alternate:brightness-0  alternate:invert"
-          height={20}
-          src="/images/codeation.io.svg"
-          width={187}
-        />
-        <figcaption className="hidden">
-          Codeation.io - BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS
-        </figcaption>
-      </figure>
+      <Link href="/">
+        <a>
+          <figure>
+            <Image
+              alt="Codeation.io"
+              className="alternate:brightness-0  alternate:invert"
+              height={20}
+              src="/images/codeation.io.svg"
+              width={187}
+            />
+            <figcaption className="hidden">
+              Codeation.io - BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS
+            </figcaption>
+          </figure>
+        </a>
+      </Link>
       <div className="ml-auto hidden items-center space-x-20 font-khula lg:flex">
         <Link href="/">
           <a className="nav-item">Home</a>
