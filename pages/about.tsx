@@ -21,7 +21,7 @@ const valueItems = [
   },
   {
     content:
-      'We rely on the latest technology for our work. We host a team that is fountains of new ideas, fueling better products, services, and processes. The company embraces laughter, humor, and having fun while working toward a common goal. It pools a diverse set of perspectives and experiences by assembling cross-functional teams to collaborate on a project.',
+      `Greek philosopher Heraclitus once said that “the only constant in life is change.”We strive to change with the latest technology and advancements. We value inspiring, original, and intelligent ideas. Our team works hard to redefine the standard of excellence to stay relevant and efficient with changing needs of tech. We try new things, iterate them, adapt them and come up with new solutions.`,
     icon: '/images/value3.svg',
     id: 3
   }
@@ -39,15 +39,9 @@ const sections = [
   {
     content: (
       <>
-        Rishabh came from a generation when technology was far forlorn and the internet was seeping
-        its primary roots in India. As someone who did not fit into that set of shared expectations
-        of society, he wanted to do something innovative and solve the problems of people with his
-        analytical mindset.
+        Rishabh comes from a generation when technology was far forlorn and the internet was seeping its primary roots in India. As someone who did not fit into that set of shared expectations of society, he wanted to do something innovative and solve the problems of people with his analytical mindset.
         <br />
-        While everyone was scrubbing their hands into this digital enigma, he was excited to play
-        with it and devise technologies that would help to ease the business flex. His grit,
-        passion, and dedication to solving business problems through technology led to the
-        foundation of &ldquo;CODEATION&rdquo;.
+        While everyone was scrubbing their hands into this digital enigma, he was excited to play with it and devise technologies that would help to ease the business flex. His grit, passion, and dedication to solving business problems through technology led to the foundation of &ldquo;CODEATION&rdquo;.
       </>
     ),
     img: '/images/our-story.svg',
