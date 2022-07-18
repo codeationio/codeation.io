@@ -1,10 +1,8 @@
 import Footer from 'components/Footer';
 import { HeroType2 } from 'components/Hero';
-import Navbar from 'components/Navbar';
 import Section from 'components/Section';
 import Wrapper from 'components/Wrapper';
 import Head from 'next/head';
-import Image from 'next/image';
 
 const questions = Array.from({ length: 5 }).map((_, index) => ({
   answer:

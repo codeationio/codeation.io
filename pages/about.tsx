@@ -1,9 +1,7 @@
 import Footer from 'components/Footer';
 import { HeroType2 } from 'components/Hero';
-import Navbar from 'components/Navbar';
-import Section, { TwoColSection } from 'components/Section';
+import { TwoColSection } from 'components/Section';
 import Wrapper from 'components/Wrapper';
-import Image from 'next/image';
 import OurValues from 'sections/OurValues';
 
 const valueItems = [
@@ -20,28 +18,25 @@ const valueItems = [
     id: 2
   },
   {
-    content:
-      `Greek philosopher Heraclitus once said that “the only constant in life is change.”We strive to change with the latest technology and advancements. We value inspiring, original, and intelligent ideas. Our team works hard to redefine the standard of excellence to stay relevant and efficient with changing needs of tech. We try new things, iterate them, adapt them and come up with new solutions.`,
+    content: `Greek philosopher Heraclitus once said that “the only constant in life is change.”We strive to change with the latest technology and advancements. We value inspiring, original, and intelligent ideas. Our team works hard to redefine the standard of excellence to stay relevant and efficient with changing needs of tech. We try new things, iterate them, adapt them and come up with new solutions.`,
     icon: '/images/value3.svg',
     id: 3
   }
 ];
-const content = valueItems.map((post) => (
-  <div key={post.id} className="flex flex-col items-center">
-    <span className="mb-10">
-      <Image alt="values" height={100} src={`${post.icon}`} width={100} />
-    </span>
-    <p className="w-2/4 text-card-description">{post.content}</p>
-  </div>
-));
 
 const sections = [
   {
     content: (
       <>
-        Rishabh comes from a generation when technology was far forlorn and the internet was seeping its primary roots in India. As someone who did not fit into that set of shared expectations of society, he wanted to do something innovative and solve the problems of people with his analytical mindset.
+        Rishabh comes from a generation when technology was far forlorn and the internet was seeping
+        its primary roots in India. As someone who did not fit into that set of shared expectations
+        of society, he wanted to do something innovative and solve the problems of people with his
+        analytical mindset.
         <br />
-        While everyone was scrubbing their hands into this digital enigma, he was excited to play with it and devise technologies that would help to ease the business flex. His grit, passion, and dedication to solving business problems through technology led to the foundation of &ldquo;CODEATION&rdquo;.
+        While everyone was scrubbing their hands into this digital enigma, he was excited to play
+        with it and devise technologies that would help to ease the business flex. His grit,
+        passion, and dedication to solving business problems through technology led to the
+        foundation of &ldquo;CODEATION&rdquo;.
       </>
     ),
     img: '/images/our-story.svg',
@@ -79,8 +74,8 @@ const About = () => (
     {sections.map((section) => (
       <TwoColSection key={section.title} {...section} />
     ))}
-    <OurValues />
 
+    <OurValues />
     <Footer />
   </Wrapper>
 );

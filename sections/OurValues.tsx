@@ -1,4 +1,4 @@
-import Card, { CardDescription, ServicesCard } from 'components/Card';
+import Card, { CardDescription } from 'components/Card';
 import RoundedIcon from 'components/RoundedIcon';
 import Section from 'components/Section';
 
@@ -16,9 +16,8 @@ const cards = [
     id: 2
   },
   {
-    content:
-      `Greek philosopher Heraclitus once said that “the only constant in life is change.”We strive to change with the latest technology and advancements. We value inspiring, original, and intelligent ideas. Our team works hard to redefine the standard of excellence to stay relevant and efficient with changing needs of tech. We try new things, iterate them, adapt them and come up with new solutions.`,
-    icon: '/images/check.svg',
+    content: `Greek philosopher Heraclitus once said that “the only constant in life is change.”We strive to change with the latest technology and advancements. We value inspiring, original, and intelligent ideas. Our team works hard to redefine the standard of excellence to stay relevant and efficient with changing needs of tech. We try new things, iterate them, adapt them and come up with new solutions.`,
+    icon: '/images/lock.svg',
     id: 3
   }
 ];
@@ -31,7 +30,9 @@ const OurValues = () => (
     {cards.map(({ content, icon }) => (
       <Card key={icon} shadow={false}>
         <RoundedIcon className="mx-auto my-12" icon={icon} />
-        <CardDescription className="mx-auto">{content}</CardDescription>
+        <CardDescription className="block w-full max-w-fit text-5.5 leading-9 lg:text-justify">
+          {content}
+        </CardDescription>
       </Card>
     ))}
   </Section>

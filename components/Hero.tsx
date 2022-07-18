@@ -16,7 +16,7 @@ const Hero: FC = () => {
         </h1>
         <span className="h-0.5 w-48 bg-primary" />
         <p className="text-5.5 font-normal text-grey">
-        A trusted agency for your business needs <br></br> Invest in the right service and solution
+          A trusted agency for your business needs <br /> Invest in the right service and solution
         </p>
       </div>
       <figure className="translate-x-36 translate-y-28">

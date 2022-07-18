@@ -4,7 +4,6 @@ import Hero from 'components/Hero';
 import Navbar from 'components/Navbar';
 import Section from 'components/Section';
 import Wrapper from 'components/Wrapper';
-import Head from 'next/head';
 import { FC } from 'react';
 import ClientsSection from 'sections/ClientsSection';
 import Services from 'sections/Services';
