@@ -5,10 +5,10 @@
 @tailwind utilities;
 
 .nav-item {
-  @apply cursor-pointer text-lg font-normal text-grey hover:text-primary alternate:text-white;
+  @apply text-lg font-normal text-grey hover:text-primary alternate:text-white;
 }
 .nav-btn {
-  @apply cursor-pointer rounded border-2 border-primary px-5 py-1 text-lg font-semibold text-primary alternate:text-white alternate:border-white;
+  @apply rounded border-2 border-primary px-5 pt-1 text-lg font-semibold text-primary alternate:text-white alternate:border-white;
 }
 
 summary {
