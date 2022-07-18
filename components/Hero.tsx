@@ -19,7 +19,7 @@ const Hero: FC = () => {
           An All-in-One Platform for all your website and mobile development Needs.
         </p>
       </div>
-      <figure className="translate-x-40 translate-y-28">
+      <figure className="translate-x-36 translate-y-28">
         <Image alt="Hero_Section" height={500} src="/images/hero_section.svg" width={500} />
       </figure>
     </Section>
