@@ -27,8 +27,8 @@ const OurValues = () => (
     className="grid grid-cols-2 gap-5 lg:grid-cols-3 lg:gap-16"
     id="services"
     title="Our Values">
-    {cards.map(({ content, icon }) => (
-      <Card key={icon} shadow={false}>
+    {cards.map(({ content, icon, id }) => (
+      <Card key={id} shadow={false}>
         <RoundedIcon className="mx-auto my-12" icon={icon} />
         <CardDescription className="block w-full max-w-fit text-5.5 leading-9 lg:text-justify">
           {content}
