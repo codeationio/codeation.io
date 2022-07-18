@@ -13,7 +13,7 @@ const CodeationApp: FC<{ Component: typeof Component; pageProps: any }> = ({
       <Head>
         <title>Codeation.io - BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS</title>
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 };
