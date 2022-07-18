@@ -1,4 +1,5 @@
 import Footer from 'components/Footer';
+import { HeroType2 } from 'components/Hero';
 import Navbar from 'components/Navbar';
 import Section from 'components/Section';
 import Wrapper from 'components/Wrapper';
@@ -18,27 +19,12 @@ const ContactUs = () => (
       <title>Contact | Codeation.io</title>
     </Head>
     <Wrapper className="alternate [&>div:first-child]:bg-cover [&>div:first-child]:bg-no-repeat [&>*:first-child]:bg-[url('/images/contact-us.png')]">
-      <Section head>
-        <Navbar />
-        <Section className="relative mx-auto flex h-[40vh] lg:flex-row">
-          <div className="break-word flex flex-col justify-center gap-y-5 lg:w-1/2 lg:-translate-y-[10%]">
-            <h1 className="text-5xl font-bold text-black alternate:text-white">Contact Us</h1>
-            <p className="w-8/12 text-5.5 font-thin text-white">
-              Hey, we are a productive team of developers came together to deliever the best
-              services for your company
-            </p>
-          </div>
-          <div className="items absolute right-0 flex flex-col justify-center lg:w-1/2 lg:translate-y-[6%]">
-            <Image
-              alt="Contact hero section"
-              className="absolute"
-              height={534}
-              src="/images/contact-hero.svg"
-              width={649}
-            />
-          </div>
-        </Section>
-      </Section>
+      <HeroType2
+        description="Hey, we are a productive team of developers came together to deliever the best
+        services for your company"
+        img="/images/contact-hero.svg"
+        title="Contact Us"
+      />
       <Section className="grid grid-cols-2 gap-y-10">
         <header className="col-span-2">
           <h2 className="w-1/4 text-4xl capitalize">Frequently asked questions</h2>
