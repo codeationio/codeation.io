@@ -6,7 +6,7 @@ const Testimonial = () => {
   return (
     <div className="flex justify-between">
       <div className="flex flex-col justify-center gap-y-7">
-        <h1 className=" text-5xl">
+        <h1 className="text-2xl lg:text-5xl text-secondary">
           What the People <br /> Think About Us
         </h1>
         <div>
@@ -14,7 +14,9 @@ const Testimonial = () => {
           <Image alt="right_arrow" height={52} src="/images/right_arrow.svg" width={52} />
         </div>
       </div>
-      <div className="flex gap-x-4">
+      {/* //TODO: fix the testimonials cards */}
+      {/*//! remember to bring them back later */}
+      {/* <div className="flex gap-x-4">
         <TestimonialCard
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae, velit eros, mauris quis suspendisse."
           name="Person"
@@ -29,7 +31,7 @@ const Testimonial = () => {
           rating={4}
           url="/images/testimonial_avtar.svg"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

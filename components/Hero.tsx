@@ -6,20 +6,20 @@ import Section from './Section';
 
 const Hero: FC = () => {
   return (
-    <Section className="mx-auto grid h-[calc(100vh_-_9rem)] grid-cols-2 lg:max-w-7xl lg:flex-row lg:justify-center">
+    <Section className="h-auto mx-auto lg:grid lg:h-[calc(100vh_-_9rem)] grid-cols-2 lg:max-w-7xl lg:flex-row lg:justify-center flex flex-col-reverse">
       <div className="break-word flex flex-col justify-center gap-y-5">
-        <h1 className="text-5xl font-bold text-black ">
+        <h1 className="text-2xl lg:text-5xl font-bold text-black ">
           BRIDGING THE GAP BETWEEN
           <span className="ml-1 text-primary">TECHNOLOGY </span>
           AND
           <span className="ml-1 text-primary">BUSINESS</span>
         </h1>
         <span className="h-0.5 w-48 bg-primary" />
-        <p className="text-5.5 font-normal text-grey">
+        <p className="text-lg lg:text-5.5 font-normal text-grey">
           A trusted agency for your business needs <br /> Invest in the right service and solution
         </p>
       </div>
-      <figure className="translate-x-36 translate-y-28">
+      <figure className="lg:translate-x-36 lg:translate-y-28">
         <Image alt="Hero_Section" height={500} src="/images/hero_section.svg" width={500} />
       </figure>
     </Section>
