@@ -29,9 +29,10 @@ export const CardTitle: FCC = ({ children, className }) => {
   );
 };
 
-export const CardDescription: FCC = ({ children }) => {
+export const CardDescription: FCC<{ className?: string }> = ({ children, className }) => {
   return (
-    <summary className="hidden max-w-[250px] text-center text-card-description text-description lg:block">
+    <summary
+      className={`hidden max-w-xs list-none text-center text-card-description text-description lg:block ${className}`}>
       {children}
     </summary>
   );
