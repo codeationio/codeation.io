@@ -15,9 +15,6 @@ import Work from 'sections/Work';
 const Index: FC = () => {
   return (
     <>
-      <Head>
-        <title>Codeation.io - BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS</title>
-      </Head>
       <Wrapper>
         <Section head>
           <Navbar />
