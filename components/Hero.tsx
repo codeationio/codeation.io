@@ -19,7 +19,7 @@ const Hero: FC = () => {
         A trusted agency for your business needs <br></br> Invest in the right service and solution
         </p>
       </div>
-      <figure className="translate-x-40 translate-y-28">
+      <figure className="translate-x-36 translate-y-28">
         <Image alt="Hero_Section" height={500} src="/images/hero_section.svg" width={500} />
       </figure>
     </Section>
