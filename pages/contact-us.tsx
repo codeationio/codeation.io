@@ -20,7 +20,7 @@ const ContactUs = () => (
     </Head>
     <Wrapper className="alternate [&>div:first-child]:bg-cover [&>div:first-child]:bg-no-repeat [&>*:first-child]:bg-[url('/images/contact-us.png')]">
       <HeroType2
-        description="Hey, we are a productive team of developers came together to deliever the best
+        description="Hey, we are a productive team of developers came together to deliver the best
         services for your company"
         img="/images/contact-hero.svg"
         title="Contact Us"
