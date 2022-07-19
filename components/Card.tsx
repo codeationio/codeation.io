@@ -1,15 +1,18 @@
 import { FCC } from 'globalTypes';
 import Image from 'next/image';
+import { DetailedHTMLProps, HTMLAttributes } from 'react';
 import StarRatings from 'react-star-ratings';
 
-export type CardProps = {
-  className?: string;
+export type CardProps = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
   shadow?: boolean;
 };
 
-const Card: FCC<CardProps> = ({ children, className, shadow }) => {
+const Card: FCC<CardProps> = ({ children, className, id, shadow, ...props }) => {
   return (
-    <article className={`rounded-lg${shadow ? ' shadow-card ' : ''}${className}`}>
+    <article
+      className={`rounded-lg${shadow ? ' shadow-card ' : ''}${className}`}
+      id={id}
+      {...props}>
       {children}
     </article>
   );
@@ -32,7 +35,7 @@ export const CardTitle: FCC = ({ children, className }) => {
 export const CardDescription: FCC<{ className?: string }> = ({ children, className }) => {
   return (
     <summary
-      className={`hidden max-w-xs list-none text-center text-card-description text-description lg:block ${className}`}>
+      className={`max-w-xs list-none text-center text-card-description text-description ${className}`}>
       {children}
     </summary>
   );
@@ -48,7 +51,7 @@ export const ServicesCard: FCC<ServicesCardProps> = ({ description, image, title
     <Card className="flex flex-col items-center justify-center bg-white p-6 lg:min-w-fit lg:px-14 lg:pb-14 lg:pt-10">
       <Image alt="Card" height={209} objectFit="fill" src={image} width={236} />
       <CardTitle>{title}</CardTitle>
-      <CardDescription>{description}</CardDescription>
+      <CardDescription className="hidden lg:block">{description}</CardDescription>
     </Card>
   );
 };
@@ -76,6 +79,7 @@ export const TeamCard: FCC<TeamCardProps> = ({ description, name, post, url }) =
 type TestimonialProps = {
   name: string;
   description: string;
+  id: string;
   post: string;
   url: string;
   rating: number;
@@ -83,13 +87,17 @@ type TestimonialProps = {
 
 export const TestimonialCard: FCC<TestimonialProps> = ({
   description,
+  id,
   name,
   post,
   rating,
   url
 }) => {
   return (
-    <Card className="box flex w-80 flex-col items-center justify-center gap-y-2 bg-white lg:min-w-fit lg:px-5 lg:pb-14 [&>span]:!overflow-visible">
+    <Card
+      draggable
+      className="carousel-item flex w-10/12 scroll-mt-48 flex-col items-center justify-center gap-y-2 bg-white lg:w-80 lg:min-w-fit lg:px-5 lg:pb-14 [&>span]:!overflow-visible"
+      id={id}>
       <Image
         alt="Card"
         className="-translate-y-16"
