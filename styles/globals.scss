@@ -16,21 +16,9 @@ summary {
 }
 
 .carousel {
-  @apply flex overflow-x-scroll;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  &-vertical {
-    @apply flex-col overflow-y-scroll;
-    scroll-snap-type: y mandatory;
-  }
+  @apply flex overflow-hidden overflow-x-scroll snap-x snap-mandatory scroll-smooth scrollbar-hide px-2 ;
+
   &-item {
-    @apply box-content flex flex-none;
-    scroll-snap-align: start;
-  }
-  &-center .carousel-item {
-    scroll-snap-align: center;
-  }
-  &-end .carousel-item {
-    scroll-snap-align: end;
+    @apply box-content snap-start scroll-mx-3;
   }
 }

@@ -1,19 +1,16 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('tailwindcss').Config}  */
 
-const plugin = require('tailwindcss/plugin');
 const defaultTheme = require('tailwindcss/defaultTheme');
+const scrollbarHide = require('./plugins/hideScrollbar');
+const alternateLabel = require('./plugins/alternateLabel');
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
     './sections/**/*.{js,ts,jsx,tsx}'
   ],
-  plugins: [
-    plugin(({ addVariant }) => {
-      addVariant('alternate', '.alternate &');
-    })
-  ],
+  plugins: [alternateLabel, scrollbarHide],
   theme: {
     colors: {
       black: '#0F1221',

@@ -95,8 +95,7 @@ export const TestimonialCard: FCC<TestimonialProps> = ({
 }) => {
   return (
     <Card
-      draggable
-      className="px-5 pb-5 carousel-item flex w-10/12 scroll-mt-48 flex-col items-center justify-center gap-y-2 bg-white lg:w-80 lg:min-w-fit lg:px-5 lg:pb-14 [&>span]:!overflow-visible"
+      className="carousel-item flex flex-col items-center justify-center gap-y-2 bg-white p-5 pt-0 lg:w-80 lg:min-w-fit lg:pb-14 [&>span]:!overflow-visible"
       id={id}>
       <Image
         alt="Card"
