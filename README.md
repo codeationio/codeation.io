@@ -1,1 +1,11 @@
-# Codeation.io Next.js + Tailwind CSS + Eslint + Prettier template.
+# Codeation.io main website.
+
+## [Codeation.io](https://codeation.io)
+## Setup Instruction
+
+- Clone the repository to your computer.
+- run following commands
+  ```
+  git clone 
+
+
