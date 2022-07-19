@@ -39,12 +39,12 @@ export type TwoColSectionProps = {
 export const TwoColSection: FC<TwoColSectionProps> = ({ content, img, reverse = false, title }) => (
   <Section key={title} className="grid lg:grid-cols-2" title={title}>
     <article className={reverse ? 'order-2' : 'order-1'}>
-      <figure className="flex -translate-y-10 justify-center">
+      <figure className="flex -translate-y-10 justify-center mx-6">
         <Image height={420} src={img} width={420} />
       </figure>
     </article>
     <article className={reverse ? 'order-1' : 'order-2'}>
-      <p className="font-khula text-2xl font-normal capitalize leading-9 text-grey">{content}</p>
+      <p className="font-khula text-lg lg:text-2xl font-normal capitalize leading-9 text-grey">{content}</p>
     </article>
   </Section>
 );

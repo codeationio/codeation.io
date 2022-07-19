@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 const Navbar = () => {
   return (
-    <nav className="flex h-24 items-center">
+    <nav className="flex lg:h-24 items-center px-4 py-6  ">
       <Link href="/">
         <a>
-          <figure>
+          <figure className='flex'>
             <Image
               alt="Codeation.io"
               className="alternate:brightness-0  alternate:invert"

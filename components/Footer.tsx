@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="grid h-auto w-screen grid-cols-2 flex-row gap-10 text-white">
+    <footer className="grid h-auto w-screen grid-cols-2 flex-row gap-10 text-white pl-4	lg:pl-0">
       <div className="flex justify-evenly flex-col lg:!flex-row">
         <div className="grid grid-flow-col grid-rows-3">
           <div className="col-span-4 mb-3 flex items-end">

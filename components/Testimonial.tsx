@@ -4,9 +4,9 @@ import { TestimonialCard } from './Card';
 
 const Testimonial = () => {
   return (
-    <div className="flex justify-between">
-      <div className="flex flex-col justify-center gap-y-7 lg:min-w-fit">
-        <h1 className="text-2xl text-secondary lg:text-5xl">
+    <div className="flex justify-between flex-col lg:flex-row">
+      <div className="flex flex-col justify-center gap-y-7 lg:min-w-fit ">
+        <h1 className="text-2xl text-secondary lg:text-5xl font-semibold	">
           What the People <br /> Think About Us
         </h1>
         <div className="!space-x-2">

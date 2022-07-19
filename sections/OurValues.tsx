@@ -17,7 +17,7 @@ const cards = [
   },
   {
     content: `Greek philosopher Heraclitus once said that “the only constant in life is change.”We strive to change with the latest technology and advancements. We value inspiring, original, and intelligent ideas. Our team works hard to redefine the standard of excellence to stay relevant and efficient with changing needs of tech. We try new things, iterate them, adapt them and come up with new solutions.`,
-    icon: '/images/lock.svg',
+    icon: '/images/check.svg',
     id: 3
   }
 ];

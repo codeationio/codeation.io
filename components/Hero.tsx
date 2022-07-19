@@ -19,7 +19,8 @@ const Hero: FC = () => {
           A trusted agency for your business needs <br /> Invest in the right service and solution
         </p>
       </div>
-      <figure className="lg:translate-x-36 lg:translate-y-28">
+      {/* //** Removed the translate properties */}
+      <figure className="mx-16 lg:m-0 lg:mx-0 flex align-center justify-center">
         <Image alt="Hero_Section" height={500} src="/images/hero_section.svg" width={500} />
       </figure>
     </Section>
@@ -39,8 +40,8 @@ export const HeroType2: FC<HeroType2Props> = ({ description, img, imgClassName, 
       <Navbar />
       <Section className="relative flex flex-col md:h-[400px] lg:flex-row">
         <div className="break-word flex flex-col justify-center gap-y-5 lg:w-1/2 lg:-translate-y-8">
-          <h1 className="text-5xl font-bold text-black alternate:text-white">{title}</h1>
-          <summary className="w-8/12 list-none text-5.5 font-thin text-white">
+          <h1 className="text-2xl lg:text-5xl font-bold text-black alternate:text-white">{title}</h1>
+          <summary className="w-8/12 list-none text-lg lg:text-5.5 font-thin text-white">
             {description}
           </summary>
         </div>
