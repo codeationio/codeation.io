@@ -56,7 +56,7 @@ export const ServicesCard: FCC<ServicesCardProps> = ({ description, image, title
   );
 };
 
-type TeamCardProps = {
+export type TeamCardProps = {
   name: string;
   description: string;
   post: string;

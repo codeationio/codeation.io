@@ -24,7 +24,7 @@ const clientsArr: Partial<ClientProps>[] = [
 
 const ClientsSection = () => {
   return (
-    <Section className="flex justify-evenly flex-wrap	">
+    <Section className="flex flex-wrap justify-evenly	">
       {clientsArr.map((item, index) => (
         <Client
           key={index}

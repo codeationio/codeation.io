@@ -1,41 +1,41 @@
-import { TeamCard } from 'components/Card';
+import { TeamCard, TeamCardProps } from 'components/Card';
 import Section from 'components/Section';
-const teamArr: any[] = [
+const teamArr: TeamCardProps[] = [
   {
-    avatar: '/images/team_avatar.svg',
     description: 'Former Co-Founder & CEO @ Allscreen (acquired)',
     name: 'Jason Malik',
-    post: 'Co-Founder'
+    post: 'Co-Founder',
+    url: '/images/team_avatar.svg'
   },
   {
-    avatar: '/images/team_avatar.svg',
     description: 'Former Co-Founder & CEO @ Allscreen (acquired)',
     name: 'Jason Malik',
-    post: 'Co-Founder'
+    post: 'Co-Founder',
+    url: '/images/team_avatar.svg'
   },
   {
-    avatar: '/images/team_avatar.svg',
     description: 'Former Co-Founder & CEO @ Allscreen (acquired)',
     name: 'Jason Malik',
-    post: 'Co-Founder'
+    post: 'Co-Founder',
+    url: '/images/team_avatar.svg'
   },
   {
-    avatar: '/images/team_avatar.svg',
     description: 'Former Co-Founder & CEO @ Allscreen (acquired)',
     name: 'Jason Malik',
-    post: 'Co-Founder'
+    post: 'Co-Founder',
+    url: '/images/team_avatar.svg'
   },
   {
-    avatar: '/images/team_avatar.svg',
     description: 'Former Co-Founder & CEO @ Allscreen (acquired)',
     name: 'Jason Malik',
-    post: 'Co-Founder'
+    post: 'Co-Founder',
+    url: '/images/team_avatar.svg'
   },
   {
-    avatar: '/images/team_avatar.svg',
     description: 'Former Co-Founder & CEO @ Allscreen (acquired)',
     name: 'Jason Malik',
-    post: 'Co-Founder'
+    post: 'Co-Founder',
+    url: '/images/team_avatar.svg'
   }
 ];
 
@@ -48,7 +48,7 @@ const Team = () => {
           description={item.description}
           name={item.name}
           post={item.post}
-          url={item.avatar}
+          url={item.url}
         />
       ))}
     </Section>

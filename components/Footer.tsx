@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 const Footer = () => {
   return (
-    <footer className="grid h-auto w-screen grid-cols-2 flex-row gap-10 text-white pl-4	lg:pl-0">
-      <div className="flex justify-evenly flex-col lg:!flex-row">
+    <footer className="grid h-auto w-screen grid-cols-2 flex-row gap-10 pl-4 text-white	lg:pl-0">
+      <div className="flex flex-col justify-evenly lg:!flex-row">
         <div className="grid grid-flow-col grid-rows-3">
           <div className="col-span-4 mb-3 flex items-end">
             <Image alt="Codeation.io" height={20} src="/images/footer_logo.svg" width={187} />
@@ -21,9 +21,9 @@ const Footer = () => {
         </div>
         <div className="grid grid-flow-col grid-rows-2">
           <div className="col-span-1 flex items-center">
-            <h1 className="text-lg lg:text-3xl  font-bold ">Site&nbsp;Links</h1>
+            <h1 className="text-lg font-bold  lg:text-3xl ">Site&nbsp;Links</h1>
           </div>
-          <div className="col-span-11 leading-8 text-sm	">
+          <div className="col-span-11 text-sm leading-8	">
             <h3>Home</h3>
             <h3>About us</h3>
             <h3>Recent Work</h3>
@@ -31,12 +31,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex flex-col items-center justify-evenly">
-        <div className="flex w-full items-center lg:justify-evenly justify-start">
-          <span className="h-0.5 w-52 bg-white hidden lg:flex" />
-          <h1 className="text-lg lg:text-3xl font-bold">Services</h1>
-          <span className="h-0.5 w-52 bg-white hidden lg:flex" />
+        <div className="flex w-full items-center justify-start lg:justify-evenly">
+          <span className="hidden h-0.5 w-52 bg-white lg:flex" />
+          <h1 className="text-lg font-bold lg:text-3xl">Services</h1>
+          <span className="hidden h-0.5 w-52 bg-white lg:flex" />
         </div>
-        <div className="flex w-full justify-around leading-8 text-sm flex-col lg:flex-row">
+        <div className="flex w-full flex-col justify-around text-sm leading-8 lg:flex-row">
           <div>
             <h3>Software Development</h3>
             <h3>Mobile App Development</h3>

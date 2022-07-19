@@ -4,26 +4,6 @@ import { TwoColSection } from 'components/Section';
 import Wrapper from 'components/Wrapper';
 import OurValues from 'sections/OurValues';
 
-const valueItems = [
-  {
-    content:
-      'We take an inquisitive, methodical approach to every project to ensure we find the best solution possible. Keeping our clients best interests at heart is a way of work for us. We strive to provide exceptional customer service through flexible scheduling, quality products, efficient services, and innovative solutions resulting in value to the customer and company.',
-    icon: '/images/value1.svg',
-    id: 1
-  },
-  {
-    content:
-      'Quality is a prerequisite to our development process. We are passionate about the minor details of the business. From concept to launch, our website and marketing projects are thoroughly tested and built to last. We ensure that every element and every increment of the solution reflects quality standards throughout the development lifecycle.',
-    icon: '/images/value2.svg',
-    id: 2
-  },
-  {
-    content: `Greek philosopher Heraclitus once said that “the only constant in life is change.”We strive to change with the latest technology and advancements. We value inspiring, original, and intelligent ideas. Our team works hard to redefine the standard of excellence to stay relevant and efficient with changing needs of tech. We try new things, iterate them, adapt them and come up with new solutions.`,
-    icon: '/images/value3.svg',
-    id: 3
-  }
-];
-
 const sections = [
   {
     content: (

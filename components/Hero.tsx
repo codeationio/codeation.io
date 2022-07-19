@@ -6,21 +6,21 @@ import Section from './Section';
 
 const Hero: FC = () => {
   return (
-    <Section className="h-auto mx-auto lg:grid lg:h-[calc(100vh_-_9rem)] grid-cols-2 lg:max-w-7xl lg:flex-row lg:justify-center flex flex-col-reverse">
+    <Section className="mx-auto flex h-auto grid-cols-2 flex-col-reverse lg:grid lg:h-[calc(100vh_-_9rem)] lg:max-w-7xl lg:flex-row lg:justify-center">
       <div className="break-word flex flex-col justify-center gap-y-5">
-        <h1 className="text-2xl lg:text-5xl font-bold text-black ">
+        <h1 className="text-2xl font-bold text-black lg:text-5xl ">
           BRIDGING THE GAP BETWEEN
           <span className="ml-1 text-primary">TECHNOLOGY </span>
           AND
           <span className="ml-1 text-primary">BUSINESS</span>
         </h1>
         <span className="h-0.5 w-48 bg-primary" />
-        <p className="text-lg lg:text-5.5 font-normal text-grey">
+        <p className="text-lg font-normal text-grey lg:text-5.5">
           A trusted agency for your business needs <br /> Invest in the right service and solution
         </p>
       </div>
       {/* //** Removed the translate properties */}
-      <figure className="mx-16 lg:m-0 lg:mx-0 flex align-center justify-center">
+      <figure className="align-center mx-16 flex justify-center lg:m-0 lg:mx-0">
         <Image alt="Hero_Section" height={500} src="/images/hero_section.svg" width={500} />
       </figure>
     </Section>
@@ -40,8 +40,10 @@ export const HeroType2: FC<HeroType2Props> = ({ description, img, imgClassName, 
       <Navbar />
       <Section className="relative flex flex-col md:h-[400px] lg:flex-row">
         <div className="break-word flex flex-col justify-center gap-y-5 lg:w-1/2 lg:-translate-y-8">
-          <h1 className="text-2xl lg:text-5xl font-bold text-black alternate:text-white">{title}</h1>
-          <summary className="w-8/12 list-none text-lg lg:text-5.5 font-thin text-white">
+          <h1 className="text-2xl font-bold text-black alternate:text-white lg:text-5xl">
+            {title}
+          </h1>
+          <summary className="w-8/12 list-none text-lg font-thin text-white lg:text-5.5">
             {description}
           </summary>
         </div>
