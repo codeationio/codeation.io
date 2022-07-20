@@ -6,7 +6,7 @@ import Section from './Section';
 
 const Hero: FC = () => {
   return (
-    <Section className="mx-auto flex h-auto grid-cols-2 flex-col-reverse lg:grid lg:h-[calc(100vh_-_9rem)] lg:max-w-7xl lg:flex-row lg:justify-center">
+    <Section className="mx-auto flex h-auto grid-cols-2 flex-col-reverse lg:grid lg:h-[calc(100vh_-_6rem)] lg:max-w-7xl lg:flex-row lg:justify-center">
       <div className="break-word flex flex-col justify-center gap-y-5">
         <h1 className="text-2xl font-bold text-black lg:text-5xl ">
           BRIDGING THE GAP BETWEEN

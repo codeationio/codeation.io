@@ -3,6 +3,8 @@ import Image from 'next/image';
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 import StarRatings from 'react-star-ratings';
 
+import { TestimonialProps } from './Types/Testimonials';
+
 export type CardProps = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
   shadow?: boolean;
 };
@@ -74,15 +76,6 @@ export const TeamCard: FCC<TeamCardProps> = ({ description, name, post, url }) =
       <CardDescription>{description}</CardDescription>
     </Card>
   );
-};
-
-type TestimonialProps = {
-  name: string;
-  description: string;
-  id: string;
-  post: string;
-  url: string;
-  rating: number;
 };
 
 export const TestimonialCard: FCC<TestimonialProps> = ({

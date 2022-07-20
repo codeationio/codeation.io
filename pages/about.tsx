@@ -25,16 +25,12 @@ const sections = [
   {
     content: (
       <>
-        Our mission is always guided towards creating interactive and consumer-focused web and
-        mobile experiences that help to enhance brand presence and make the journey of the user
-        simple, fast, and more communicable.
-        <br />
-        <br />
-        We believe that digital transformation is less about technology and more about people and
-        that’s why we house a huge team of experts who are proficient in their fortes and have
-        razor-sharp insight that is result-driven and offers high returns on your marketing spend.
-        So, no matter whatever business solutions we seek, we are here to provide you with the best
-        solutions.
+        Our mission is derived from ‘Technological entrepreneurship’ also called ‘technopreneurship’
+        which involves tech-savvy, creative, innovative individuals who have a knack for taking
+        calculated risks. Technopreneurship is an idea centered around creating a new product or
+        coming up with a solution to some problem using highly innovative technology that
+        facilitates prosperity in individuals, firms, regions, and nations by making their work
+        technically sound, secure, and easy to do.
       </>
     ),
     img: '/images/our-mission.svg',

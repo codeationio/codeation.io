@@ -1,59 +1,62 @@
 import Image from 'next/image';
+const services: string[] = [
+  'Software Development',
+  'Analytical Dashboard',
+  'AWS, GCP, Azure',
+  'Mobile App Development',
+  'UI / UX',
+  'Digital Marketing',
+  'Web Development',
+  'QA',
+  'ERM And Finance'
+];
 
 const Footer = () => {
   return (
-    <footer className="grid h-auto w-screen grid-cols-2 flex-row gap-10 pl-4 text-white	lg:pl-0">
-      <div className="flex flex-col justify-evenly lg:!flex-row">
-        <div className="grid grid-flow-col grid-rows-3">
-          <div className="col-span-4 mb-3 flex items-end">
-            <Image alt="Codeation.io" height={20} src="/images/footer_logo.svg" width={187} />
-          </div>
-          <p className="col-span-4 flex items-end text-xs">
-            3rd Floor, F-88 , Phase 7,
-            <br /> Industrial Area, Sector 73,
-            <br /> SAS nagar, Punjab,
-            <br /> India. 160055
-          </p>
-          <div className="col-span-4 flex items-center">
-            <Image alt="twitter" height={20} src="/images/twitter.svg" width={35} />
-            <Image alt="linkedin" height={20} src="/images/linkedin.svg" width={35} />
-          </div>
-        </div>
-        <div className="grid grid-flow-col grid-rows-2">
-          <div className="col-span-1 flex items-center">
-            <h1 className="text-lg font-bold  lg:text-3xl ">Site&nbsp;Links</h1>
-          </div>
-          <div className="col-span-11 text-sm leading-8	">
-            <h3>Home</h3>
-            <h3>About us</h3>
-            <h3>Recent Work</h3>
-          </div>
-        </div>
-      </div>
-      <div className="flex flex-col items-center justify-evenly">
-        <div className="flex w-full items-center justify-start lg:justify-evenly">
-          <span className="hidden h-0.5 w-52 bg-white lg:flex" />
-          <h1 className="text-lg font-bold lg:text-3xl">Services</h1>
-          <span className="hidden h-0.5 w-52 bg-white lg:flex" />
-        </div>
-        <div className="flex w-full flex-col justify-around text-sm leading-8 lg:flex-row">
-          <div>
-            <h3>Software Development</h3>
-            <h3>Mobile App Development</h3>
-            <h3>Web Development</h3>
+    <footer className="text-white">
+      <article className="mb-7 grid grid-cols-2 flex-row gap-10">
+        <div className="ml-5 flex flex-col justify-evenly lg:m-0 lg:!flex-row">
+          <div className="flex flex-col gap-y-4">
+            <figure className="mt-10">
+              <Image alt="Codeation.io" height={28} src="/images/footer_logo.svg" width={267} />
+            </figure>
+            <p className="flex items-end text-xs lg:col-span-4 lg:text-lg">
+              3rd Floor, F-88 , Phase 7,
+              <br /> Industrial Area, Sector 73,
+              <br /> SAS nagar, Punjab,
+              <br /> India. 160055
+            </p>
+            <figure className="flex items-start lg:items-center">
+              <Image alt="twitter" height={20} src="/images/twitter.svg" width={35} />
+              <Image alt="linkedin" height={20} src="/images/linkedin.svg" width={35} />
+            </figure>
           </div>
           <div>
-            <h3>Analytical Dashboard</h3>
-            <h3>UI / UX</h3>
-            <h3>QA</h3>
-          </div>
-          <div>
-            <h3>AWS, GCP, Azure</h3>
-            <h3>Digital Marketing</h3>
-            <h3>ERM And Finance</h3>
+            <h1 className="text-lg font-bold lg:mt-10 lg:text-3xl">Site&nbsp;Links</h1>
+            <div className="text-sm lg:mt-10	lg:text-lg">
+              <h3>Home</h3>
+              <h3>About us</h3>
+              <h3>Recent Work</h3>
+            </div>
           </div>
         </div>
-      </div>
+        <div className="flex flex-col lg:gap-y-10 lg:leading-7">
+          <div className="flex items-center justify-between lg:mt-10">
+            <span className="hidden h-0.5 w-52 bg-white lg:flex" />
+            <h1 className="text-lg font-bold lg:text-3xl">Services</h1>
+            <span className="hidden h-0.5 w-52 bg-white lg:flex" />
+          </div>
+          <div className="grid grid-cols-3 gap-x-10">
+            {services.map((service, index) => (
+              <h3 key={index}>{service}</h3>
+            ))}
+          </div>
+        </div>
+      </article>
+      <article className="flex w-full flex-col items-center justify-end">
+        <span className="mb-6 h-0.5 w-[356px] bg-white lg:hidden" />
+        <p className="flex text-lg">copyright © codeation 2022</p>
+      </article>
     </footer>
   );
 };
