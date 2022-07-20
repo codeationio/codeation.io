@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 const services: string[] = [
   'Software Development',
   'Analytical Dashboard',
@@ -27,12 +28,16 @@ const Footer = () => {
               <br /> India. 160055
             </p>
             <div className="flex items-start lg:items-center xl:items-center">
-              <figure className="h-7 w-8">
+              {/* <figure className="h-7 w-8">
                 <Image alt="twitter" height={20} src="/images/twitter.svg" width={35} />
-              </figure>
-              <figure className="h-7 w-8">
-                <Image alt="twitter" height={20} src="/images/linkedin.svg" width={35} />
-              </figure>
+              </figure> */}
+              <Link href="https://www.linkedin.com/company/codeation/">
+                <a>
+                  <figure className="h-7 w-8">
+                    <Image alt="linkdin" height={20} src="/images/linkedin.svg" width={35} />
+                  </figure>
+                </a>
+              </Link>
             </div>
           </div>
           <div>
