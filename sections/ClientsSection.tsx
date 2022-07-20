@@ -6,28 +6,32 @@ const clientsArr: Partial<ClientProps>[] = [
     logo: '/images/client_1.svg'
   },
   {
+    height: 24,
     logo: '/images/client_2.svg',
-    width: 140
+    width: 170
   },
   {
     logo: '/images/client_3.svg'
   },
   {
+    height: 96,
     logo: '/images/client_4.svg'
   },
   {
+    height: 51,
     logo: '/images/client_5.svg',
-    width: 140
+    width: 251
   },
   {
+    height: 50,
     logo: '/images/client_6.svg',
-    width: 120
+    width: 190
   }
 ];
 
 const ClientsSection = () => {
   return (
-    <Section className="flex flex-wrap justify-evenly [&>*]:mr-2	">
+    <Section className="flex flex-wrap items-center justify-evenly [&>*]:mr-2	">
       {clientsArr.map((item, index) => (
         <Client
           key={index}

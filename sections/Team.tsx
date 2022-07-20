@@ -18,24 +18,6 @@ const teamArr: TeamCardProps[] = [
     name: 'Jason Malik',
     post: 'Co-Founder',
     url: '/images/team_avatar.svg'
-  },
-  {
-    description: 'Former Co-Founder & CEO @ Allscreen (acquired)',
-    name: 'Jason Malik',
-    post: 'Co-Founder',
-    url: '/images/team_avatar.svg'
-  },
-  {
-    description: 'Former Co-Founder & CEO @ Allscreen (acquired)',
-    name: 'Jason Malik',
-    post: 'Co-Founder',
-    url: '/images/team_avatar.svg'
-  },
-  {
-    description: 'Former Co-Founder & CEO @ Allscreen (acquired)',
-    name: 'Jason Malik',
-    post: 'Co-Founder',
-    url: '/images/team_avatar.svg'
   }
 ];
 

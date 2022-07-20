@@ -1,11 +1,11 @@
 import Section from 'components/Section';
 import Testimonial from 'components/Testimonial';
 
-const Testimonials = () => {
+const TestimonialSection = () => {
   return (
     <Section title="Testimonial">
       <Testimonial />
     </Section>
   );
 };
-export default Testimonials;
+export default TestimonialSection;

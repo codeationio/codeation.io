@@ -32,7 +32,7 @@ const workArr: Props[] = [
   }
 ];
 
-const Work = () => (
+const RecentWorkSection = () => (
   <Section
     className="[&>*]:flex-col lg:[&>*:nth-child(odd)]:flex-row lg:[&>*:nth-child(even)]:flex-row-reverse"
     title="Recent Work">
@@ -48,4 +48,4 @@ const Work = () => (
   </Section>
 );
 
-export default Work;
+export default RecentWorkSection;

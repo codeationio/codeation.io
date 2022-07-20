@@ -6,10 +6,10 @@ import Section from 'components/Section';
 import Wrapper from 'components/Wrapper';
 import { FC } from 'react';
 import ClientsSection from 'sections/ClientsSection';
+import RecentWorkSection from 'sections/RecentWorkSection';
 import Services from 'sections/Services';
 import Team from 'sections/Team';
-import Testimonials from 'sections/Testimonials';
-import Work from 'sections/Work';
+import TestimonialSection from 'sections/TestimonialSection';
 
 const Index: FC = () => {
   return (
@@ -20,9 +20,9 @@ const Index: FC = () => {
           <Hero />
         </Section>
         <Services />
-        <Work />
+        <RecentWorkSection />
         <Section>
-          <Testimonials />
+          <TestimonialSection />
           <ClientsSection />
         </Section>
         <Team />

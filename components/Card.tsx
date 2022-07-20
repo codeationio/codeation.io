@@ -3,8 +3,6 @@ import Image from 'next/image';
 import { DetailedHTMLProps, HTMLAttributes } from 'react';
 import StarRatings from 'react-star-ratings';
 
-import { TestimonialProps } from './Types/Testimonials';
-
 export type CardProps = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
   shadow?: boolean;
 };
@@ -78,21 +76,32 @@ export const TeamCard: FCC<TeamCardProps> = ({ description, name, post, url }) =
   );
 };
 
+export type TestimonialProps = {
+  name: string;
+  company?: string;
+  description: string;
+  id: string;
+  designation?: string;
+  url: string;
+  rating: number;
+};
+
 export const TestimonialCard: FCC<TestimonialProps> = ({
+  company,
   description,
+  designation,
   id,
   name,
-  post,
   rating,
   url
 }) => {
   return (
     <Card
-      className="carousel-item flex flex-col items-center justify-center gap-y-2 bg-white p-5 pt-0 lg:w-80 lg:min-w-fit lg:pb-14 [&>span]:!overflow-visible"
+      className="carousel-item flex min-w-fit flex-col items-center justify-center  bg-white p-5 pt-0 lg:w-80 lg:min-w-fit lg:pb-14 [&>span]:!overflow-visible"
       id={id}>
       <Image
         alt="Card"
-        className="-translate-y-16"
+        className="-translate-y-16 rounded-full"
         height={132}
         objectFit="fill"
         src={url}
@@ -100,14 +109,16 @@ export const TestimonialCard: FCC<TestimonialProps> = ({
       />
       <Image
         alt="comma"
-        className="-translate-y-8"
+        className="-mt-7 -translate-y-8"
         height={25}
         src="/images/comma.svg"
         width={32}
       />
-      <CardTitle className="mt-0 text-black">{name}</CardTitle>
-      <p className="mb-2 text-xl font-medium text-grey">{post}</p>
-      <CardDescription>{description}</CardDescription>
+      <CardTitle className="-mt-3 mb-0 text-[28px] text-black">{name}</CardTitle>
+      <p className="mb-2 mt-2 h-5 text-sm font-medium text-description lg:m-0">
+        {designation} {company && ', ' + company}
+      </p>
+      <CardDescription className="grow text-lg text-black/80">{description}</CardDescription>
       <StarRatings rating={rating} starDimension="17px" starRatedColor="gold" starSpacing="5px" />
     </Card>
   );
