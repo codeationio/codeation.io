@@ -18,9 +18,9 @@ const clientsArr: Partial<ClientProps>[] = [
     logo: '/images/client_4.svg'
   },
   {
-    height: 51,
+    height: 400,
     logo: '/images/client_5.svg',
-    width: 251
+    width: 500
   },
   {
     height: 50,
@@ -31,7 +31,7 @@ const clientsArr: Partial<ClientProps>[] = [
 
 const ClientsSection = () => {
   return (
-    <Section className="flex flex-wrap items-center justify-evenly [&>*]:mr-2	">
+    <Section className="flex flex-wrap items-center gap-10 [&>*]:mx-auto">
       {clientsArr.map((item, index) => (
         <Client
           key={index}

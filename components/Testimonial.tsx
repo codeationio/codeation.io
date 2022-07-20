@@ -6,7 +6,7 @@ import { TestimonialCard, TestimonialProps } from './Card';
 const data: TestimonialProps[] = [
   {
     company: 'Deuglo',
-    description: `We connected with Codeation after years of searching for a company's can help us with a customized dashboard solution. We are an education company and wanted a customized dashboard solution to set up the complete process and make the in-house communication and operational work easy. They work very professionally and within deadlines`,
+    description: `We connected with Codeation after a long time of searching for a company's can help us with a customized dashboard solution. We are an education company and wanted a customized dashboard solution to set up the complete process and make the in-house communication and operational work easy. They work very professionally and within deadlines`,
     designation: 'CEO',
     id: 'test-1',
     name: 'Sujit thakur',
@@ -51,7 +51,7 @@ const Testimonial = () => {
   return (
     <div className="flex flex-col justify-between lg:flex-row xl:flex-row">
       <div className="flex flex-col justify-center gap-y-7 lg:min-w-fit  xl:min-w-fit ">
-        <h1 className="text-2xl font-semibold text-secondary lg:text-4xl	 xl:text-4xl	">
+        <h1 className="text-2xl font-semibold text-secondary lg:text-4xl xl:text-4xl	">
           DON’T JUST TAKE <br /> OUR WORD FOR US,
           <br /> LET OUR CLIENTS <br />
           TELL OUR STORY
@@ -67,10 +67,10 @@ const Testimonial = () => {
               <Image alt="right_arrow" height={52} src="/images/right_arrow.svg" width={52} />
             </a>
           </Link>
-          <p className=" mb-2 text-lg text-description">There are many more</p>
+          <p className="mb-2 text-lg text-description">There are many more</p>
         </div>
       </div>
-      <div className="carousel justify-start gap-x-4 py-20 lg:ml-20 xl:ml-20">
+      <div className="carousel justify-start gap-x-4 py-20 lg:ml-20">
         {data.map((item, index) => (
           <TestimonialCard
             key={index}
