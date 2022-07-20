@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 const GetInTouch = () => {
   return (
-    <div className="flex h-auto flex-col justify-around space-y-7 p-10 lg:h-64	lg:flex-row lg:space-y-7 lg:p-0">
-      <h1 className="flex flex-col justify-center text-2xl font-semibold leading-10 text-secondary lg:text-4xl">
+    <div className="flex h-auto flex-col justify-around space-y-7 p-10 lg:h-64	lg:flex-row lg:p-0 xl:h-64  xl:flex-row xl:p-0">
+      <h1 className="flex flex-col justify-center text-2xl font-semibold leading-10 text-secondary lg:text-4xl xl:text-4xl">
         Ready to work with us? <br /> <span className="text-primary">Get in touch </span>{' '}
       </h1>
       <div className="flex items-center">

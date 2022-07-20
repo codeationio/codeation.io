@@ -9,7 +9,7 @@ const Wrapper: FCC<{ className?: string }> = ({ children, className: $className 
       : '[&>*:nth-child(even)]:bg-light-grey [&>*:nth-child(odd)]:bg-white'
   }`;
   return (
-    <main className={`lg:mx-0 ${className}`}>
+    <main className={`xl:mx-0 ${className}`}>
       {Children.map(children, (child, i) => (
         <div
           className={`flex w-screen snap-y snap-mandatory flex-col items-center last:!bg-black alternate:first:bg-secondary [&>*]:w-full [&>*]:max-w-8xl [&>*]:snap-start [&>*]:snap-always ${

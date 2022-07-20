@@ -11,14 +11,14 @@ const data: TestimonialProps[] = [
     id: 'test-1',
     name: 'Sujit thakur',
     rating: 5,
-    url: '/images/testimonial_avatar.svg'
+    url: '/images/male_icon.png'
   },
   {
     description: `We decided to work with Codeation after having a detailed brainstorming session with the Codeation team. They were very detailed and provided us with various insightful feedback for our project and we are more than happy to choose them. Their hands-on work experience and ability to tailor our dashboard according to our specific needs have been exemplary. We highly recommend them for website solutions.`,
     id: 'test-2',
     name: 'Meng',
     rating: 5,
-    url: '/images/testimonial_avatar.svg'
+    url: '/images/male_icon.png'
   },
   {
     company: 'Adi Shree Udyog',
@@ -27,19 +27,19 @@ const data: TestimonialProps[] = [
     id: 'test-3',
     name: 'Uday Jain ',
     rating: 5,
-    url: '/images/testimonial_avatar.svg'
+    url: '/images/male_icon.png'
   },
   {
     description: `The web team's efforts to use AWS to design our app and launch it has been amazing. They were able to understand what we needed and wanted to communicate as a brand. The passion and dedication they work with are truly appreciable.`,
     id: 'test-4',
     name: 'Sneha',
     rating: 5,
-    url: '/images/testimonial_avatar.svg'
+    url: '/images/female_icon.png'
   },
   {
     company: 'VK Soft Solutions',
     description: `I got a reference for Rishabh from one of my clients. He is a super amazing guy and knows what he is working at. We had various meetings and detailed calls on the app that I wanted them to make. The complete team is very apt in their work. The feedback was always taken on board and implemented without any hesitation.`,
-    designation: 'CEO',
+    designation: 'CEO & Founder',
     id: 'test-5',
     name: 'Varun Kumar',
     rating: 5,
@@ -49,9 +49,9 @@ const data: TestimonialProps[] = [
 
 const Testimonial = () => {
   return (
-    <div className="flex flex-col justify-between lg:flex-row">
-      <div className="flex flex-col justify-center gap-y-7 lg:min-w-fit ">
-        <h1 className="text-2xl font-semibold text-secondary lg:text-4xl	">
+    <div className="flex flex-col justify-between lg:flex-row xl:flex-row">
+      <div className="flex flex-col justify-center gap-y-7 lg:min-w-fit  xl:min-w-fit ">
+        <h1 className="text-2xl font-semibold text-secondary lg:text-4xl	 xl:text-4xl	">
           DON’T JUST TAKE <br /> OUR WORD FOR US,
           <br /> LET OUR CLIENTS <br />
           TELL OUR STORY
@@ -70,7 +70,7 @@ const Testimonial = () => {
           <p className=" mb-2 text-lg text-description">There are many more</p>
         </div>
       </div>
-      <div className="carousel justify-start gap-x-4 py-20 lg:ml-20">
+      <div className="carousel justify-start gap-x-4 py-20 lg:ml-20 xl:ml-20">
         {data.map((item, index) => (
           <TestimonialCard
             key={index}

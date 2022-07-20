@@ -25,7 +25,7 @@ const ContactUs = () => (
       />
       <Section className="grid grid-cols-2 gap-y-10">
         <header className="col-span-2">
-          <h2 className="w-1/4 text-lg font-semibold capitalize text-secondary lg:text-4xl ">
+          <h2 className="w-1/4 text-lg font-semibold capitalize text-secondary lg:text-4xl  xl:text-4xl ">
             Frequently asked questions
           </h2>
         </header>

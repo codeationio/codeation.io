@@ -34,7 +34,7 @@ const workArr: Props[] = [
 
 const RecentWorkSection = () => (
   <Section
-    className="[&>*]:flex-col lg:[&>*:nth-child(odd)]:flex-row lg:[&>*:nth-child(even)]:flex-row-reverse"
+    className="[&>*]:flex-col lg:[&>*:nth-child(odd)]:flex-row xl:[&>*:nth-child(odd)]:flex-row lg:[&>*:nth-child(even)]:flex-row-reverse xl:[&>*:nth-child(even)]:flex-row-reverse"
     title="Recent Work">
     {workArr?.map((item, index) => (
       <RecentWork

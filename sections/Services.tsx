@@ -60,7 +60,7 @@ const cards = [
 
 const Services = () => (
   <Section
-    className="grid grid-cols-2 gap-5 lg:grid-cols-3 lg:gap-16"
+    className="grid grid-cols-2 gap-5 lg:grid-cols-3 xl:grid-cols-3 xl:gap-16 xl:gap-16"
     id="services"
     title="Our Services">
     {cards.map((card, index) => (
