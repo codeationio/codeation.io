@@ -16,13 +16,13 @@ const Contact = () => {
                 </div>
                 <div className="flex space-x-4">
                     <Input type="email" name="email" placeholder="Your Email"/>
-                    <Input type="number" name="phone number" placeholder="Your Phone No."/>
+                    <Input type="tel" name="phone number" placeholder="Your Phone No."/>
                 </div>
                 <div className="flex flex-col space-y-2">
                     <label htmlFor="message" className="text-grey font-khula">Message:</label>
                     <textarea cols={20} rows={7} id='message' className="outline-0 px-5 py-4 rounded font-khula text-secondary" placeholder="Your text here"></textarea>
                 </div>
-                <input type="submit" value="Send" className="bg-primary text-white py-4 rounded text-xl"/>
+                <input alt="Submit" type="submit" value={`Send`} className="bg-primary text-white py-4 rounded text-xl"/>
             </div>
         </form>
     );
