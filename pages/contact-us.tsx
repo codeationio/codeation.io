@@ -6,10 +6,9 @@ import Head from 'next/head';
 import Contact from 'sections/contact';
 
 const questions = Array.from({ length: 5 }).map((_, index) => ({
-  answer:
-    'this is the answer. some more stuff for flexibility. this is the answer. some more stuff for flexibility.',
+  answer: 'this is the answer. some more stuff for flexibility. this is the answer. some more stuff for flexibility.',
   id: index,
-  question: 'What is the purpose of this website?'
+  question: 'What is the purpose of this website?',
 }));
 
 const ContactUs = () => (
@@ -24,14 +23,12 @@ const ContactUs = () => (
         img="/images/contact-hero.svg"
         title="Contact Us"
       />
-      <div className='flex flex-col-reverse lg:flex-row lg:items-center'>
+      <div className="flex flex-col-reverse lg:flex-row lg:items-center">
         <Section className="grid grid-cols-2 gap-y-10">
           <header className="col-span-2">
-            <h2 className="w-1/4 text-lg font-semibold capitalize text-secondary lg:text-4xl  xl:text-4xl ">
-              Frequently asked questions
-            </h2>
+            <h2 className="w-1/4 text-lg font-semibold capitalize text-secondary lg:text-4xl xl:text-4xl ">Frequently asked questions</h2>
           </header>
-          <main className='flex'>
+          <main className="flex">
             <ol className="relative border-l-2 border-dashed border-primary p-0 dark:border-primary">
               {questions.map(({ answer, id, question }) => (
                 <li key={id} className="mb-10 ml-6 -translate-y-5 space-y-2 font-khula last:mb-0">
@@ -43,7 +40,7 @@ const ContactUs = () => (
             </ol>
           </main>
         </Section>
-        <Contact/>
+        <Contact />
       </div>
       <Footer />
     </Wrapper>

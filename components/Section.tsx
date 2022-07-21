@@ -1,6 +1,8 @@
 import { FCC } from 'globalTypes';
 import Image from 'next/image';
-import { FC, ReactNode } from 'react';
+import { FC, ReactNode, Suspense } from 'react';
+
+import SkeletonLoading from './SkeletonLoading';
 
 export type SectionProps = {
   className?: string;
@@ -14,19 +16,21 @@ const Section: FCC<SectionProps> = ({ children, className, head, id, title }) =>
     <section className="scroll-m-12" id={id}>
       {title && (
         <header className="mb-8 lg:mb-10 xl:mb-10">
-          <h1 className="relative text-center text-3xl font-bold text-primary before:absolute before:-bottom-4 before:left-1/2 before:w-40 before:-translate-x-1/2 before:border-b-2 before:content-['_']  lg:text-5xl xl:text-5xl">
+          <h1 className="relative text-center text-3xl font-bold capitalize text-primary before:absolute before:-bottom-4 before:left-1/2 before:w-40 before:-translate-x-1/2 before:border-b-2  before:content-['_'] lg:text-5xl xl:text-5xl">
             {title}
           </h1>
         </header>
       )}
-      <main className={`${head ? '' : 'p-4 '}${className}`}>{children}</main>
+      <main className={`${head ? '' : 'p-4 '}${className}`}>
+        <Suspense fallback={<SkeletonLoading />}>{children}</Suspense>
+      </main>
     </section>
   );
 };
 
 Section.defaultProps = {
   className: '',
-  head: false
+  head: false,
 };
 
 export type TwoColSectionProps = {
@@ -44,9 +48,7 @@ export const TwoColSection: FC<TwoColSectionProps> = ({ content, img, reverse = 
       </figure>
     </article>
     <article className={reverse ? 'order-1' : 'order-2'}>
-      <p className="font-khula text-lg font-normal capitalize leading-9 text-grey lg:text-2xl xl:text-2xl">
-        {content}
-      </p>
+      <p className="font-khula text-lg font-normal capitalize leading-9 text-grey lg:text-2xl xl:text-2xl">{content}</p>
     </article>
   </Section>
 );

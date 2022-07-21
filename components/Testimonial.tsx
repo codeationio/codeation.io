@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { TestimonialCard, TestimonialProps } from './Card';
+import TestimonialCard, { TestimonialProps } from './Card/TestimonialCard';
 
 const data: TestimonialProps[] = [
   {
@@ -11,14 +11,14 @@ const data: TestimonialProps[] = [
     id: 'test-1',
     name: 'Sujit thakur',
     rating: 5,
-    url: '/images/male_icon.png'
+    url: '/images/male_icon.png',
   },
   {
     description: `We decided to work with Codeation after having a detailed brainstorming session with the Codeation team. They were very detailed and provided us with various insightful feedback for our project and we are more than happy to choose them. Their hands-on work experience and ability to tailor our dashboard according to our specific needs have been exemplary. We highly recommend them for website solutions.`,
     id: 'test-2',
     name: 'Meng',
     rating: 5,
-    url: '/images/male_icon.png'
+    url: '/images/male_icon.png',
   },
   {
     company: 'Adi Shree Udyog',
@@ -27,14 +27,14 @@ const data: TestimonialProps[] = [
     id: 'test-3',
     name: 'Uday Jain ',
     rating: 5,
-    url: '/images/male_icon.png'
+    url: '/images/male_icon.png',
   },
   {
     description: `The web team's efforts to use AWS to design our app and launch it has been amazing. They were able to understand what we needed and wanted to communicate as a brand. The passion and dedication they work with are truly appreciable.`,
     id: 'test-4',
     name: 'Sneha',
     rating: 5,
-    url: '/images/female_icon.png'
+    url: '/images/female_icon.png',
   },
   {
     company: 'VK Soft Solutions',
@@ -43,18 +43,16 @@ const data: TestimonialProps[] = [
     id: 'test-5',
     name: 'Varun Kumar',
     rating: 5,
-    url: '/images/vkSoft.png'
-  }
+    url: '/images/vkSoft.png',
+  },
 ];
 
 const Testimonial = () => {
   return (
     <div className="flex flex-col justify-between lg:flex-row xl:flex-row">
-      <div className="flex flex-col justify-center gap-y-7 lg:min-w-fit  xl:min-w-fit ">
-        <h1 className="text-2xl font-semibold text-secondary lg:text-4xl xl:text-4xl	">
-          DON’T JUST TAKE <br /> OUR WORD FOR US,
-          <br /> LET OUR CLIENTS <br />
-          TELL OUR STORY
+      <div className="flex flex-col justify-center gap-y-7 lg:min-w-fit xl:min-w-fit ">
+        <h1 className="max-w-sm text-2xl font-semibold text-secondary lg:text-4xl xl:text-4xl">
+          DON’T JUST TAKE OUR WORD FOR US, LET OUR CLIENTS TELL OUR STORY
         </h1>
         <div className="flex items-center !space-x-2">
           <Link href="#test-1">

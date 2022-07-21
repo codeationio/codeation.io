@@ -23,7 +23,7 @@ const Wrapper: FCC<{ className?: string }> = ({ children, className: $className 
 };
 
 Wrapper.defaultProps = {
-  className: ''
+  className: '',
 };
 
 export default Wrapper;

@@ -6,9 +6,14 @@ type Props = {
   placeholder: string;
 };
 
-const Input: FC<Props> = ({ type, name, placeholder }) => {
+const Input: FC<Props> = ({ name, placeholder, type }) => {
   return (
-    <input className='bg-light-grey border-b border-grey outline-0	py-3 text-secondary font-khula w-full	lg:w-auto' type={type} name={name} placeholder={placeholder}/>
+    <input
+      className="w-full border-b border-grey bg-light-grey py-3 font-khula text-secondary outline-0 lg:w-auto"
+      name={name}
+      placeholder={placeholder}
+      type={type}
+    />
   );
 };
 

@@ -4,10 +4,7 @@ import Head from 'next/head';
 import { Component, FC } from 'react';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const CodeationApp: FC<{ Component: typeof Component; pageProps: any }> = ({
-  Component,
-  pageProps
-}) => {
+const CodeationApp: FC<{ Component: typeof Component; pageProps: any }> = ({ Component, pageProps }) => {
   return (
     <>
       <Head>

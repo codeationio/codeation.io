@@ -8,35 +8,31 @@ const sections = [
   {
     content: (
       <>
-        Rishabh comes from a generation when technology was far forlorn and the internet was seeping
-        its primary roots in India. As someone who did not fit into that set of shared expectations
-        of society, he wanted to do something innovative and solve the problems of people with his
-        analytical mindset.
+        Rishabh comes from a generation when technology was far forlorn and the internet was seeping its primary roots in India. As someone
+        who did not fit into that set of shared expectations of society, he wanted to do something innovative and solve the problems of
+        people with his analytical mindset.
         <br />
-        While everyone was scrubbing their hands into this digital enigma, he was excited to play
-        with it and devise technologies that would help to ease the business flex. His grit,
-        passion, and dedication to solving business problems through technology led to the
+        While everyone was scrubbing their hands into this digital enigma, he was excited to play with it and devise technologies that would
+        help to ease the business flex. His grit, passion, and dedication to solving business problems through technology led to the
         foundation of &ldquo;CODEATION&rdquo;.
       </>
     ),
     img: '/images/our-story.svg',
-    title: 'Our Story'
+    title: 'Our Story',
   },
   {
     content: (
       <>
-        Our mission is derived from ‘Technological entrepreneurship’ also called ‘technopreneurship’
-        which involves tech-savvy, creative, innovative individuals who have a knack for taking
-        calculated risks. Technopreneurship is an idea centered around creating a new product or
-        coming up with a solution to some problem using highly innovative technology that
-        facilitates prosperity in individuals, firms, regions, and nations by making their work
-        technically sound, secure, and easy to do.
+        Our mission is derived from ‘Technological entrepreneurship’ also called ‘technopreneurship’ which involves tech-savvy, creative,
+        innovative individuals who have a knack for taking calculated risks. Technopreneurship is an idea centered around creating a new
+        product or coming up with a solution to some problem using highly innovative technology that facilitates prosperity in individuals,
+        firms, regions, and nations by making their work technically sound, secure, and easy to do.
       </>
     ),
     img: '/images/our-mission.svg',
     reverse: true,
-    title: 'Our Mission'
-  }
+    title: 'Our Mission',
+  },
 ];
 
 const About = () => (
