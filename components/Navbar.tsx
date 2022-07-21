@@ -13,9 +13,7 @@ const Navbar = () => {
               src="/images/codeation.io.svg"
               width={187}
             />
-            <figcaption className="hidden">
-              Codeation.io - BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS
-            </figcaption>
+            <figcaption className="hidden">Codeation.io - BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS</figcaption>
           </figure>
         </a>
       </Link>
