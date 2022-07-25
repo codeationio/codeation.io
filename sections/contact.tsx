@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Contact = () => {
   return (
-    <form className="flex flex-col space-y-12 rounded-lg bg-light-grey p-10">
+    <form className="flex  flex-col space-y-12 rounded-lg bg-light-grey p-10">
       <h4 className="flex items-center space-x-4 text-4xl font-semibold text-secondary">
         <span className="flex rounded bg-primary p-2">
           <Image alt="mail" height={45} src="/images/mail.svg" width={45} />
@@ -30,7 +30,12 @@ const Contact = () => {
             placeholder="Your text here"
             rows={7}></textarea>
         </div>
-        <input alt="Submit" className="rounded bg-primary py-4 text-xl text-white" type="submit" value={`Send`} />
+        <input
+          alt="Submit"
+          className="rounded bg-primary py-4 text-xl text-white"
+          type="submit"
+          value={`Send`}
+        />
       </div>
     </form>
   );

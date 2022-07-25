@@ -9,7 +9,7 @@ const services: string[] = [
   'Digital Marketing',
   'Web Development',
   'QA',
-  'ERM And Finance',
+  'ERM And Finance'
 ];
 
 const Footer = () => {
@@ -34,14 +34,22 @@ const Footer = () => {
               <Link href="https://www.linkedin.com/company/codeation/">
                 <a>
                   <figure className="h-7 w-8">
-                    <Image alt="linkdin" height={20} src="/images/linkedin.svg" width={35} />
+                    <Image
+                      alt="linkdin"
+                      // className="hover:bg-primary"
+                      height={20}
+                      src="/images/linkedin.svg"
+                      width={35}
+                    />
                   </figure>
                 </a>
               </Link>
             </div>
           </div>
           <div>
-            <h1 className="mt-4 text-lg font-bold lg:mt-10 lg:text-3xl xl:mt-10 ">Site&nbsp;Links</h1>
+            <h1 className="mt-4 text-lg font-bold lg:mt-10 lg:text-3xl xl:mt-10 ">
+              Site&nbsp;Links
+            </h1>
             <div className="text-sm leading-6 lg:mt-10 lg:text-lg xl:mt-10">
               <h3>Home</h3>
               <h3>About us</h3>
@@ -52,12 +60,16 @@ const Footer = () => {
         <div className="flex flex-col lg:gap-y-10 lg:leading-7 xl:gap-y-10 ">
           <div className="flex items-center justify-between lg:mt-10 xl:mt-10">
             <span className="hidden h-0.5 bg-white lg:flex lg:w-40 xl:flex xl:w-52" />
-            <h1 className="-mt-2 mb-4 text-lg font-bold lg:m-0 lg:text-3xl xl:text-3xl">Services</h1>
+            <h1 className="-mt-2 mb-4 text-lg font-bold lg:m-0 lg:text-3xl xl:text-3xl">
+              Services
+            </h1>
             <span className=" hidden h-0.5 bg-white lg:mr-3 lg:flex lg:w-40 xl:flex xl:w-52" />
           </div>
           <div className="lg:grid lg:grid-cols-3 lg:gap-x-6 xl:gap-x-10">
             {services.map((service, index) => (
-              <h3 key={index} className="leading-6 lg:w-max lg:text-xs lg:leading-7 xl:text-lg xl:leading-7 ">
+              <h3
+                key={index}
+                className="leading-6 lg:w-max lg:text-xs lg:leading-7 xl:text-lg xl:leading-7 ">
                 {service}
               </h3>
             ))}
