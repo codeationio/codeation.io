@@ -1,7 +1,10 @@
+// import '../styles/hero.css';
+
 import Image from 'next/image';
 import { FC } from 'react';
 
 import Navbar from './Navbar';
+import ProcessAnimation from './ProcessAnimation';
 import Section from './Section';
 
 const Hero: FC = () => {
@@ -19,8 +22,8 @@ const Hero: FC = () => {
           A trusted agency for your business needs <br /> Invest in the right service and solution
         </p>
       </div>
-      <figure className="align-center flex justify-end lg:m-0 lg:-translate-y-60 lg:-translate-x-60 xl:m-0">
-        <Image alt="Hero_Section" height={500} src="/images/hero-section-img.svg" width={500} />
+      <figure className="align-center flex justify-end lg:m-0 lg:translate-y-10 lg:-translate-x-6 xl:m-0">
+        <ProcessAnimation height={500} width={500} />
       </figure>
     </Section>
   );
@@ -39,12 +42,8 @@ export const HeroType2: FC<HeroType2Props> = ({ description, img, imgClassName, 
       <Navbar />
       <Section className="relative flex flex-col md:h-[400px] lg:flex-row xl:flex-row">
         <div className="break-word flex flex-col justify-center gap-y-5 lg:w-1/2 xl:w-1/2 xl:-translate-y-8">
-          <h1 className="text-2xl font-bold text-black alternate:text-white lg:text-5xl xl:text-5xl">
-            {title}
-          </h1>
-          <summary className="w-8/12 list-none text-lg font-thin text-white lg:text-5.5 xl:text-5.5">
-            {description}
-          </summary>
+          <h1 className="text-2xl font-bold text-black alternate:text-white lg:text-5xl xl:text-5xl">{title}</h1>
+          <summary className="w-8/12 list-none text-lg font-thin text-white lg:text-5.5 xl:text-5.5">{description}</summary>
         </div>
         <figure className={`xl:w-1/2 ${imgClassName}`}>
           {img && <Image alt={title} className="absolute" height={534} src={img} width={649} />}
@@ -55,7 +54,7 @@ export const HeroType2: FC<HeroType2Props> = ({ description, img, imgClassName, 
 };
 
 HeroType2.defaultProps = {
-  imgClassName: ''
+  imgClassName: '',
 };
 
 export default Hero;
