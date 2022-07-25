@@ -22,7 +22,7 @@ const workArr: RecentWorkProps[] = [
 
 const RecentWorkSection = () => (
   <Section
-    className="space-y-20 [&>*]:flex-col lg:[&>*:nth-child(odd)]:flex-row xl:[&>*:nth-child(odd)]:flex-row lg:[&>*:nth-child(even)]:flex-row-reverse xl:[&>*:nth-child(even)]:flex-row-reverse"
+    className="space-y-10 [&>*]:flex-col lg:[&>*:nth-child(odd)]:flex-row xl:[&>*:nth-child(odd)]:flex-row lg:[&>*:nth-child(even)]:flex-row-reverse xl:[&>*:nth-child(even)]:flex-row-reverse"
     title="Recent Work">
     {workArr?.map((item, index) => (
       <RecentWork key={index} description={item.description} imageUrl={item.imageUrl} platforms={item.platforms} title={item.title} />
