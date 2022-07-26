@@ -12,7 +12,7 @@ const Input: FC<Props> = ({ error, name, placeholder, required = false, type }) 
   return (
     <div className="w-full">
       <input
-        className="w-full border-b border-grey bg-light-grey py-3 font-khula text-secondary outline-0"
+        className="w-full border-b border-grey bg-light-grey p-2 pl-3 pt-4 font-khula text-secondary outline-0"
         name={name}
         placeholder={placeholder}
         required={required}

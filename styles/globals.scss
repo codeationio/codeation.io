@@ -22,6 +22,7 @@ summary {
     @apply box-content snap-start scroll-mx-3;
   }
 }
-// #analysis-girl-popup {
-//   display: none;
-// }
+
+.grecaptcha-badge {
+  @apply invisible;
+}
