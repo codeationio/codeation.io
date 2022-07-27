@@ -3,6 +3,7 @@ import GetInTouch from 'components/GetInTouch';
 import Hero from 'components/Hero';
 import Navbar from 'components/Navbar';
 import Section from 'components/Section';
+import SkeletonLoading from 'components/SkeletonLoading';
 import Wrapper from 'components/Wrapper';
 import { FC, Suspense } from 'react';
 import ClientsSection from 'sections/ClientsSection';
@@ -14,7 +15,7 @@ import TestimonialSection from 'sections/TestimonialSection';
 const Index: FC = () => {
   return (
     <>
-      <Suspense>
+      <Suspense fallback={<SkeletonLoading />}>
         <Wrapper>
           <Section head>
             <Navbar />

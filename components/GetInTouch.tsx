@@ -1,23 +1,73 @@
 import Image from 'next/image';
-import Link from 'next/link';
+import { FormEventHandler, useState } from 'react';
+import { isValidEmail } from 'utils';
+
+import Input from './input';
+import Section from './Section';
 
 const GetInTouch = () => {
+  const [loading, setLoading] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<Record<string, string>>({});
+  const [email, setEmail] = useState('');
+
+  const handleSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
+    setLoading(true);
+    e.preventDefault();
+    grecaptcha.ready(async () => {
+      const token = await grecaptcha.execute(process.env.NEXT_PUBLIC_RECAPTCHA_CLIENT, { action: 'submit' });
+
+      if (!isValidEmail(email)) {
+        setError((e) => ({ ...e, email: 'Email to sahi dedo yr.' }));
+        setLoading(false);
+        return;
+      }
+
+      await fetch('/api/v1/subscribe', {
+        body: JSON.stringify({
+          email,
+          token,
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+      });
+      setError((e) => ({ ...e, email: '' }));
+      setLoading(false);
+      setSubmitted(true);
+    });
+  };
+
   return (
-    <div className="flex h-auto flex-col justify-around space-y-7 p-10 lg:h-64 lg:flex-row lg:p-0 xl:h-64  xl:flex-row xl:p-0">
-      <h1 className="flex flex-col justify-center text-2xl font-semibold leading-10 text-secondary lg:text-4xl xl:text-4xl">
-        Ready to work with us? <br /> <span className="text-primary">Get in touch </span>{' '}
-      </h1>
-      <div className="flex items-center">
-        {/* <input className="h-16 w-64 bg-white px-3.5 text-description" placeholder="Your Email : " /> */}
-        <Link href="mailto:info@codeation.io">
-          <a>
-            <div className="flex h-16 w-24 items-center justify-center rounded-full bg-primary">
-              <Image alt="Get in touch" height={28} src="/images/send_icon.svg" width={28} />
-            </div>
-          </a>
-        </Link>
-      </div>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <Section className="flex h-auto flex-col justify-around space-y-7 lg:h-64 lg:flex-row lg:p-0 xl:h-64 xl:flex-row xl:p-0">
+        <h1 className="flex flex-col justify-center text-2xl font-semibold leading-10 text-secondary lg:text-4xl xl:text-4xl">
+          Ready to work with us? <br /> <span className="text-primary">Get in touch </span>{' '}
+        </h1>
+        <div className="flex items-center">
+          <div className="flex h-14 rounded-lg bg-white">
+            <Input
+              className={`${error.email && 'border border-r-0 border-error'} `}
+              disabled={loading || submitted}
+              error={error.email}
+              name="email"
+              placeholder="Your Email : "
+              type="email"
+              value={email}
+              variant="filled"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <button
+              className="flex items-center justify-center rounded-r-lg bg-primary px-7 disabled:opacity-70"
+              disabled={loading || submitted}
+              type="submit">
+              <Image alt="Get in touch" height="100%" src="/images/send_icon.svg" width="28px" />
+            </button>
+          </div>
+        </div>
+      </Section>
+    </form>
   );
 };
 export default GetInTouch;

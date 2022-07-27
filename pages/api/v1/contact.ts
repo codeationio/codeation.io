@@ -19,7 +19,7 @@ const contactUs: NextApiHandler = async (req, res) => {
   }
 
   // Appned to Google Sheet
-  const rows = [[firstName, lastName, email, number, message, new Date().toDateString()]];
+  const rows = [[firstName, lastName, email, number, message, new Date().toLocaleString()]];
   const range = 'ContactForm';
   await appendSheet(range, rows);
 

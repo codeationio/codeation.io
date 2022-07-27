@@ -2,9 +2,10 @@ import Footer from 'components/Footer';
 import { HeroType2 } from 'components/Hero';
 import Section from 'components/Section';
 import Wrapper from 'components/Wrapper';
+import dynamic from 'next/dynamic';
 import Head from 'next/head';
-import Script from 'next/script';
-import Contact from 'sections/contact';
+
+const Contact = dynamic(() => import('sections/contact'), { suspense: true });
 
 const questions = [
   {
@@ -43,7 +44,7 @@ const ContactUs = () => (
     <Head>
       <title>Contact us | Codeation.io</title>
     </Head>
-    <Script src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_CLIENT}`} />
+
     <Wrapper className="alternate [&>div:first-child]:bg-cover [&>div:first-child]:bg-no-repeat [&>*:first-child]:bg-[url('/images/contact-us.png')]">
       <HeroType2
         description="Hey, we are a productive team of developers came together to deliver the best
