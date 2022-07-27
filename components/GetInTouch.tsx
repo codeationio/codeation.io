@@ -45,10 +45,10 @@ const GetInTouch = () => {
         <h1 className="flex flex-col justify-center text-2xl font-semibold leading-10 text-secondary lg:text-4xl xl:text-4xl">
           Ready to work with us? <br /> <span className="text-primary">Get in touch </span>{' '}
         </h1>
-        <div className="flex items-center">
+        <div className="relative flex items-center">
           <div className="flex h-14 rounded-lg bg-white">
             <Input
-              className={`${error.email && 'border border-r-0 border-error'} `}
+              className={`${error.email && 'border border-r-0 border-error'} ${submitted && 'border border-r-0 border-primary'}`}
               disabled={loading || submitted}
               error={error.email}
               name="email"
@@ -65,6 +65,9 @@ const GetInTouch = () => {
               <Image alt="Get in touch" height="100%" src="/images/send_icon.svg" width="28px" />
             </button>
           </div>
+          {submitted && (
+            <p className="text-md absolute bottom-0 text-primary">Thank you for showing interest. Look forward to hearing back from us.</p>
+          )}
         </div>
       </Section>
     </form>
