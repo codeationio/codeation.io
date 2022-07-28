@@ -60,7 +60,7 @@ const Testimonial = () => {
               <Image alt="left_arrow" height={52} src="/images/left_arrow.svg" width={52} />
             </a>
           </Link>
-          <Link href="#test-4">
+          <Link href="#test-5">
             <a>
               <Image alt="right_arrow" height={52} src="/images/right_arrow.svg" width={52} />
             </a>

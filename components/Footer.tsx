@@ -49,9 +49,15 @@ const Footer = () => {
           <div>
             <h1 className="mt-4 text-lg font-bold lg:mt-10 lg:text-3xl xl:mt-10 ">Site&nbsp;Links</h1>
             <div className="text-sm leading-6 lg:mt-10 lg:text-lg xl:mt-10">
-              <h3>Home</h3>
-              <h3>About us</h3>
-              <h3>Recent Work</h3>
+              <h3>
+                <Link href="/">Home</Link>
+              </h3>
+              <h3>
+                <Link href="/about">About us</Link>
+              </h3>
+              <h3>
+                <Link href="/#services">Services</Link>
+              </h3>
             </div>
           </div>
         </div>
@@ -72,7 +78,7 @@ const Footer = () => {
       </article>
       <article className="flex w-full flex-col items-center justify-end">
         <span className="mb-6 h-0.5 w-[356px] bg-white lg:hidden xl:hidden" />
-        <p className="flex text-lg">copyright © codeation 2022</p>
+        <p className="flex text-lg">Copyright © codeation 2022</p>
       </article>
     </footer>
   );
