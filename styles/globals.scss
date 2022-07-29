@@ -44,5 +44,8 @@ summary {
   animation: popup 2s ease-in-out 7s 1;
 }
 #testing-boy-popup {
-  animation: popup 2s ease-in-out 9s 1;
+    animation: popup 2s ease-in-out 9s 1;
+  .grecaptcha-badge {
+    @apply invisible;
+  }
 }
