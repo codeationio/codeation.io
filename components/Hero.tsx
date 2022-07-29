@@ -1,5 +1,3 @@
-// import '../styles/hero.css';
-
 import Image from 'next/image';
 import { FC } from 'react';
 
@@ -22,7 +20,7 @@ const Hero: FC = () => {
           A trusted agency for your business needs <br /> Invest in the right service and solution
         </p>
       </div>
-      <figure className="align-center flex justify-end lg:m-0 lg:translate-y-10 lg:-translate-x-6 xl:m-0">
+      <figure className="align-center flex justify-end text-center lg:m-0 lg:translate-y-14 lg:translate-x-10 xl:m-0">
         <ProcessAnimation height={500} width={500} />
       </figure>
     </Section>

@@ -22,6 +22,27 @@ summary {
     @apply box-content snap-start scroll-mx-3;
   }
 }
-// #analysis-girl-popup {
-//   display: none;
-// }
+
+@keyframes popup{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+#planing-boy-popup, #planing-girl-popup {
+  // animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: popup 2s ease-in-out 3s 1;
+  animation-timeline: initial;
+}
+#analysis-boy-popup, #analysis-girl-popup {
+  animation: popup 2s ease-in-out 5s 1;
+}
+#developing-boy-popup, #developing-girl-popup {
+  animation: popup 2s ease-in-out 7s 1;
+}
+#testing-boy-popup {
+  animation: popup 2s ease-in-out 9s 1;
+}
