@@ -1,9 +1,14 @@
+import dynamic from 'next/dynamic';
 import Image from 'next/image';
-import { FC } from 'react';
+import { FC, Suspense } from 'react';
 
 import Navbar from './Navbar';
-import ProcessAnimation from './ProcessAnimation';
 import Section from './Section';
+import SkeletonLoading from './SkeletonLoading';
+
+const ProcessAnimation = dynamic(() => import('./ProcessAnimation'), {
+  suspense: true,
+});
 
 const Hero: FC = () => {
   return (
@@ -21,7 +26,9 @@ const Hero: FC = () => {
         </p>
       </div>
       <figure className="align-center flex justify-end text-center lg:m-0 lg:translate-y-14 lg:translate-x-10 xl:m-0">
-        <ProcessAnimation height={500} width={500} />
+        <Suspense fallback={<SkeletonLoading style={{ height: 500, width: 500 }} />}>
+          <ProcessAnimation height={500} width={500} />
+        </Suspense>
       </figure>
     </Section>
   );
