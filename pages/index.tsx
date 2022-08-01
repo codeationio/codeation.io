@@ -1,16 +1,33 @@
-import Footer from 'components/Footer';
-import GetInTouch from 'components/GetInTouch';
 import Hero from 'components/Hero';
 import Navbar from 'components/Navbar';
 import Section from 'components/Section';
 import SkeletonLoading from 'components/SkeletonLoading';
-import Wrapper from 'components/Wrapper';
+import dynamic from 'next/dynamic';
 import { FC, Suspense } from 'react';
-import ClientsSection from 'sections/ClientsSection';
-import RecentWorkSection from 'sections/RecentWorkSection';
-import Services from 'sections/Services';
-import Team from 'sections/Team';
-import TestimonialSection from 'sections/TestimonialSection';
+const Wrapper = dynamic(() => import('components/Wrapper'), {
+  suspense: true,
+});
+const Footer = dynamic(() => import('components/Footer'), {
+  suspense: true,
+});
+const GetInTouch = dynamic(() => import('components/GetInTouch'), {
+  suspense: true,
+});
+const ClientsSection = dynamic(() => import('sections/ClientsSection'), {
+  suspense: true,
+});
+const RecentWorkSection = dynamic(() => import('sections/RecentWorkSection'), {
+  suspense: true,
+});
+const Services = dynamic(() => import('sections/Services'), {
+  suspense: true,
+});
+const Team = dynamic(() => import('sections/Team'), {
+  suspense: true,
+});
+const TestimonialSection = dynamic(() => import('sections/TestimonialSection'), {
+  suspense: true,
+});
 
 const Index: FC = () => {
   return (

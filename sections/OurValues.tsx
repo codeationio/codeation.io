@@ -23,7 +23,7 @@ const cards = [
 ];
 
 const OurValues = () => (
-  <Section className="grid grid-cols-2 gap-5 lg:grid-cols-3 xl:grid-cols-3 xl:gap-16 xl:gap-16" id="services" title="Our Values">
+  <Section className="grid grid-cols-2 gap-5 lg:grid-cols-3 xl:grid-cols-3 xl:gap-16" id="services" title="Our Values">
     {cards.map(({ content, icon, id }) => (
       <Card key={id} shadow={false}>
         <RoundedIcon className="mx-auto my-12" icon={icon} />
