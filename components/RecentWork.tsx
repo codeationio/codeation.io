@@ -21,7 +21,7 @@ const RecentWork: FC<RecentWorkProps> = ({ description, imageUrl, platforms, tit
         <div className="flex text-lg text-grey">
           Platforms:
           <span className="ml-4 flex gap-x-3 text-lg font-bold text-primary">
-            <p className="capitalize">{platforms.join(', ')}</p>
+            <p>{platforms.join(', ')}</p>
           </span>
         </div>
       </div>
