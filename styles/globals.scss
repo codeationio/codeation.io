@@ -10,14 +10,14 @@ body {
   --fill-blue-secondary: #387de5;
   --fill-red-primary: #ff9191;
   --fill-red-secondary: #e26161;
-  --stage-text: 'Planing';
+  --stage-text: 'Planning';
 }
 
 @keyframes chatBubble {
   0% {
     bottom: 36.5%;
     left: 0.4%;
-    --stage-text: 'Planing';
+    --stage-text: 'Planning';
   }
 
   14.29% {
@@ -25,7 +25,7 @@ body {
     left: 14%;
     --fill-current-primary: var(--fill-blue-primary);
     --fill-current-secondary: var(--fill-blue-secondary);
-    --stage-text: 'Planing';
+    --stage-text: 'Planning';
   }
 
   28.57% {
@@ -115,9 +115,9 @@ span.chat-bubble {
 }
 
 #stage-text {
-  @apply invisible absolute -bottom-20 left-1/2 w-0 after:visible after:absolute after:top-0 after:right-0 after:translate-x-1/2 after:text-xl after:font-medium after:text-primary md:after:text-3xl xl:after:text-4xl;
+  @apply invisible absolute -bottom-20 left-1/2 w-0 after:visible after:absolute after:top-0 after:right-0 after:translate-x-1/2 after:text-xl after:font-medium after:text-primary after:content-[var(--stage-text)] md:after:text-3xl xl:after:text-4xl;
 
-  &:after {
-    content: var(--stage-text);
-  }
+  // &:after {
+  //   content: var(--stage-text);
+  // }
 }
