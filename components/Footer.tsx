@@ -15,9 +15,9 @@ const services: string[] = [
 const Footer = () => {
   return (
     <footer className="text-white">
-      <article className="mb-7 grid grid-cols-2 flex-row xl:gap-10">
+      <section className="mb-7 grid grid-cols-2 flex-row xl:gap-10">
         <div className="ml-5 flex flex-col justify-evenly lg:m-0 lg:!flex-row xl:m-0 xl:!flex-row">
-          <div className="flex flex-col gap-y-4">
+          <article className="flex flex-col gap-y-4">
             <figure className="lg:mt-10 lg:-ml-1 xl:mt-10 xl:-ml-1">
               <Image alt="Codeation.io" height={28} src="/images/footer_logo.svg" width={267} />
             </figure>
@@ -45,41 +45,41 @@ const Footer = () => {
                 </a>
               </Link>
             </div>
-          </div>
-          <div>
+          </article>
+          <article>
             <h1 className="mt-4 text-lg font-bold lg:mt-10 lg:text-3xl xl:mt-10 ">Site&nbsp;Links</h1>
-            <div className="text-sm leading-6 lg:mt-10 lg:text-lg xl:mt-10">
-              <h3>
+            <main className="text-sm leading-6 lg:mt-10 lg:text-lg xl:mt-10">
+              <div>
                 <Link href="/">Home</Link>
-              </h3>
-              <h3>
+              </div>
+              <div>
                 <Link href="/about">About us</Link>
-              </h3>
-              <h3>
+              </div>
+              <div>
                 <Link href="/#services">Services</Link>
-              </h3>
-            </div>
-          </div>
+              </div>
+            </main>
+          </article>
         </div>
-        <div className="flex flex-col lg:gap-y-10 lg:leading-7 xl:gap-y-10 ">
-          <div className="flex items-center justify-between lg:mt-10 xl:mt-10">
+        <article className="flex flex-col lg:gap-y-10 lg:leading-7 xl:gap-y-10 ">
+          <header className="flex items-center justify-between lg:mt-10 xl:mt-10">
             <span className="hidden h-0.5 bg-white lg:flex lg:w-40 xl:flex xl:w-52" />
             <h1 className="-mt-2 mb-4 text-lg font-bold lg:m-0 lg:text-3xl xl:text-3xl">Services</h1>
             <span className=" hidden h-0.5 bg-white lg:mr-3 lg:flex lg:w-40 xl:flex xl:w-52" />
-          </div>
-          <div className="lg:grid lg:grid-cols-3 lg:gap-x-6 xl:gap-x-10">
+          </header>
+          <main className="lg:grid lg:grid-cols-3 lg:gap-x-6 xl:gap-x-10">
             {services.map((service, index) => (
-              <h3 key={index} className="leading-6 lg:w-max lg:text-xs lg:leading-7 xl:text-lg xl:leading-7 ">
+              <h3 key={index} className="leading-6 lg:w-max lg:text-base lg:leading-7 xl:text-lg xl:leading-7 ">
                 {service}
               </h3>
             ))}
-          </div>
-        </div>
-      </article>
-      <article className="flex w-full flex-col items-center justify-end">
+          </main>
+        </article>
+      </section>
+      <section className="flex w-full flex-col items-center justify-end">
         <span className="mb-6 h-0.5 w-[356px] bg-white lg:hidden xl:hidden" />
         <p className="flex text-lg">Copyright © codeation 2022</p>
-      </article>
+      </section>
     </footer>
   );
 };
