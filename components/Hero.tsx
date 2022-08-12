@@ -12,7 +12,7 @@ const ProcessAnimation = dynamic(() => import('./ProcessAnimation'), {
 
 const Hero: FC = () => {
   return (
-    <Section className="mx-auto flex h-auto grid-cols-2 flex-col-reverse gap-y-10 lg:grid xl:grid xl:h-[calc(100vh_-_6rem)] xl:max-w-7xl xl:flex-row xl:justify-center">
+    <Section className="mx-auto flex h-[calc(100vh_-_6rem)] grid-cols-2 flex-col-reverse gap-y-10 lg:grid xl:grid xl:max-w-7xl xl:flex-row xl:justify-center">
       <div className="break-word flex flex-col justify-center gap-y-5 lg:-translate-y-20">
         <h1 className="text-2xl font-bold text-black md:text-4xl md:leading-10  lg:text-4xl xl:text-5xl">
           BRIDGING THE GAP BETWEEN
@@ -25,11 +25,7 @@ const Hero: FC = () => {
           A trusted agency for your business needs <br /> Invest in the right service and solution
         </p>
       </div>
-      <figure className="align-center flex justify-end text-center lg:m-0 lg:translate-y-14 lg:translate-x-10 xl:m-0">
-        <Suspense fallback={<SkeletonLoading style={{ height: 500, width: 500 }} />}>
-          <ProcessAnimation height={500} width={500} />
-        </Suspense>
-      </figure>
+      <ProcessAnimation height={500} width={500} />
     </Section>
   );
 };

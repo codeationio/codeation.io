@@ -16,7 +16,7 @@ const Section: FCC<SectionProps> = ({ children, className, head, id, title }) =>
     <section className="scroll-m-12" id={id}>
       {title && (
         <header className="mb-8 lg:mb-10 xl:mb-10">
-          <h1 className="relative text-center text-3xl font-bold capitalize text-primary before:absolute before:-bottom-4 before:left-1/2 before:w-40 before:-translate-x-1/2 before:border-b-2  before:content-['_'] lg:text-5xl xl:text-5xl">
+          <h1 className="border-underline relative text-center text-3xl font-bold capitalize text-primary lg:text-5xl xl:text-5xl">
             {title}
           </h1>
         </header>

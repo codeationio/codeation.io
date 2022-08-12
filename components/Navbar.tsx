@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 const Navbar = () => {
   return (
-    <nav className="flex items-center px-4 py-6 lg:h-24   xl:h-24  ">
+    <nav className="flex items-center px-4 py-6 lg:h-24 xl:h-24">
       <Link href="/">
         <a>
           <figure className="flex">
