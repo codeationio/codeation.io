@@ -1,25 +1,28 @@
 import Image from 'next/future/image';
-import { FC, memo, SVGProps, useState } from 'react';
+import { ImageProps } from 'next/image';
+import { FC, memo, useState } from 'react';
 
 import ChatBubble from './ChatBubble';
 const animationTextArr = ['Planning', 'Analysis', 'Developing', 'Testing', 'Delivery'];
 
-const ProcessAnimationBase: FC<SVGProps<SVGSVGElement>> = ({ height, width }) => {
+const ProcessAnimationBase: FC<Pick<ImageProps, 'height' | 'width'>> = ({ height, width }) => {
   const [textIndex] = useState(0);
 
   return (
-    <div className="relative flex items-center justify-end">
-      <figure className="m-0 -translate-y-[8vh]">
+    <div className="relative mt-2 flex items-center justify-end">
+      <figure className="aspect-square md:m-0 md:-translate-y-[8vh]">
         <Image
-          className="max-h-[minmax(500px_,_calc(100vh_-_8rem_-_10vh))]"
+          alt="Codeation way of doing things."
+          className="aspect-square max-h-[calc(100vh_-_8rem_-_10vh)] md:min-h-[500px]"
           height={height}
+          loading="eager"
           src="/images/hero-section-img.svg"
           width={width}
         />
-        <div id="stage-text">{animationTextArr[textIndex]}</div>
         <span className="chat-bubble animate-chat-bubble">
           <ChatBubble />
         </span>
+        <div id="stage-text">{animationTextArr[textIndex]}</div>
       </figure>
     </div>
   );

@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 :root,
-::after {
+body {
   --fill-blue-primary: #3576d9;
   --fill-blue-secondary: #387de5;
   --fill-red-primary: #ff9191;
@@ -16,13 +16,13 @@
 @keyframes chatBubble {
   0% {
     bottom: 36.5%;
-    left: 2px;
+    left: 0.4%;
     --stage-text: 'Planing';
   }
 
   14.29% {
     bottom: 30.5%;
-    left: 70px;
+    left: 14%;
     --fill-current-primary: var(--fill-blue-primary);
     --fill-current-secondary: var(--fill-blue-secondary);
     --stage-text: 'Planing';
@@ -30,7 +30,7 @@
 
   28.57% {
     bottom: 30%;
-    left: 410px;
+    left: 81%;
     --fill-current-primary: var(--fill-red-primary);
     --fill-current-secondary: var(--fill-red-secondary);
     --stage-text: 'Analysis';
@@ -38,14 +38,14 @@
 
   42.86% {
     bottom: 56%;
-    left: 445px;
+    left: 88%;
     --fill-current-primary: var(--fill-blue-primary);
     --fill-current-secondary: var(--fill-blue-secondary);
   }
 
   57.14% {
     bottom: 95%;
-    left: 302px;
+    left: 60.4%;
     --fill-current-primary: var(--fill-blue-primary);
     --fill-current-secondary: var(--fill-blue-secondary);
     --stage-text: 'Developing';
@@ -53,20 +53,20 @@
 
   71.43% {
     bottom: 103%;
-    left: 208px;
+    left: 41.6%;
     --fill-current-primary: var(--fill-red-primary);
     --fill-current-secondary: var(--fill-red-secondary);
   }
   85.71% {
     bottom: 82%;
-    left: 25px;
+    left: 5.5%;
     --fill-current-primary: var(--fill-blue-primary);
     --fill-current-secondary: var(--fill-blue-secondary);
     --stage-text: 'Testing';
   }
   100% {
     bottom: 36.5%;
-    left: 2px;
+    left: 0.4%;
     --stage-text: 'Delivery';
   }
 }
@@ -97,9 +97,9 @@ summary {
 span.chat-bubble {
   --fill-current-primary: var(--fill-red-primary);
   --fill-current-secondary: var(--fill-red-secondary);
-  position: absolute;
+  @apply absolute scale-[.74] md:scale-100;
   bottom: 36.5%;
-  left: 2px;
+  left: 0.4%;
 }
 
 .fill-primary {
@@ -115,7 +115,7 @@ span.chat-bubble {
 }
 
 #stage-text {
-  @apply invisible absolute -bottom-20 left-1/2 after:visible after:absolute after:top-0 after:right-0 after:text-xl after:font-medium after:text-primary md:after:text-3xl xl:after:text-4xl;
+  @apply invisible absolute -bottom-20 left-1/2 w-0 after:visible after:absolute after:top-0 after:right-0 after:translate-x-1/2 after:text-xl after:font-medium after:text-primary md:after:text-3xl xl:after:text-4xl;
 
   &:after {
     content: var(--stage-text);
