@@ -11,7 +11,7 @@ const CodeationApp: FC<{ Component: typeof Component; pageProps: any }> = ({ Com
       <Head>
         <title>Codeation.io</title>
         <meta content="BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS" name="description" />
-        <meta content="Web development, App Development, Mobile, Data Science, Dashboards, Analytics" name="description" />
+        <meta content="Web development, App Development, Mobile, Data Science, Dashboards, Analytics" name="keywords" />
       </Head>
       <Script async src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_CLIENT}`} strategy="worker" />
       <Component {...pageProps} />
