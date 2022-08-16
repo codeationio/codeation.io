@@ -9,7 +9,9 @@ import SkeletonLoading from './SkeletonLoading';
 
 const Hero: FC = () => {
   return (
-    <Section className="mx-auto flex grid-cols-2 flex-col-reverse gap-y-10 md:h-[calc(100vh_-_6rem)] lg:grid xl:grid xl:max-w-7xl xl:flex-row xl:justify-center">
+    <Section
+      head
+      className="mx-auto flex grid-cols-2 flex-col-reverse gap-y-10 md:h-[calc(100vh_-_9rem)] lg:grid xl:grid xl:max-w-7xl xl:flex-row xl:justify-center">
       <div className="break-word flex flex-col justify-center gap-y-5 lg:-translate-y-20">
         <h1 className="text-xl font-bold text-black md:text-4xl md:leading-10  lg:text-4xl xl:text-5xl">
           BRIDGING THE GAP BETWEEN

@@ -4,7 +4,7 @@ const teamArr: TeamCardProps[] = [
   {
     description: 'Former CEO & Founder @ Jnex Soft Solutions',
     name: 'Rishabh Jain',
-    post: 'Founder',
+    post: 'Founder, CEO',
     url: '/images/team_avatar.svg',
   },
   {
@@ -16,14 +16,14 @@ const teamArr: TeamCardProps[] = [
   {
     description: 'Research Paper Writer, lover of technology',
     name: 'Ritika Bhardwaj',
-    post: 'Lead Data scientist',
+    post: 'Lead Data Scientist',
     url: '/images/female_avatar.svg',
   },
 ];
 
 const Team = () => {
   return (
-    <Section className="grid grid-cols-2 gap-5 xl:grid-cols-3 xl:gap-20" title="Our core team">
+    <Section className="grid grid-cols-3 gap-5 xl:gap-20" title="Our core team">
       {teamArr.map((item, index) => (
         <TeamCard key={index} description={item.description} name={item.name} post={item.post} url={item.url} />
       ))}
