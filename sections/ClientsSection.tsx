@@ -8,8 +8,10 @@ const Client = dynamic(() => import('components/Client'), {
 
 const clientsArr: Partial<ClientProps>[] = [
   {
+    height: 101,
     logo: '/images/client_1.svg',
     name: 'InnovatorsBay',
+    width: 101,
   },
   {
     height: 24,
@@ -18,13 +20,16 @@ const clientsArr: Partial<ClientProps>[] = [
     width: 170,
   },
   {
+    height: 101,
     logo: '/images/client_3.svg',
     name: 'CloudSage',
+    width: 101,
   },
   {
     height: 96,
     logo: '/images/client_4.svg',
     name: 'GSTInput',
+    width: 101,
   },
   {
     height: 400,

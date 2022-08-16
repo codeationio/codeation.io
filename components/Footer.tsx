@@ -19,7 +19,8 @@ const Footer = () => {
         <div className="ml-5 flex flex-col justify-evenly lg:m-0 lg:!flex-row xl:m-0 xl:!flex-row">
           <article className="flex flex-col gap-y-4">
             <figure className="lg:mt-10 lg:-ml-1 xl:mt-10 xl:-ml-1">
-              <Image alt="Codeation.io" height={28} src="/images/footer_logo.svg" width={267} />
+              {/* <Image alt="Codeation.io" height={28} src="/images/footer_logo.svg" width={267} /> */}
+              <img alt="Codeation.io" className="h-4 lg:h-7" src="/images/footer_logo.svg" />
             </figure>
             <p className="flex items-end text-xs leading-5 lg:col-span-4 lg:text-lg xl:col-span-4 xl:text-lg">
               3rd Floor, F-88 , Phase 7,
@@ -48,7 +49,7 @@ const Footer = () => {
           </article>
           <article>
             <h1 className="mt-4 text-lg font-bold lg:mt-10 lg:text-3xl xl:mt-10 ">Site&nbsp;Links</h1>
-            <main className="text-sm leading-6 lg:mt-10 lg:text-lg xl:mt-10">
+            <main className="text-xs leading-6 lg:mt-10 lg:text-lg xl:mt-10">
               <div>
                 <Link href="/">Home</Link>
               </div>
@@ -64,12 +65,12 @@ const Footer = () => {
         <article className="flex flex-col lg:gap-y-10 lg:leading-7 xl:gap-y-10 ">
           <header className="flex items-center justify-between lg:mt-10 xl:mt-10">
             <span className="hidden h-0.5 bg-white lg:flex lg:w-40 xl:flex xl:w-52" />
-            <h1 className="-mt-2 mb-4 text-lg font-bold lg:m-0 lg:text-3xl xl:text-3xl">Services</h1>
+            <h1 className="-mt-1 mb-1 text-lg font-bold lg:m-0 lg:mb-4 lg:text-3xl xl:text-3xl">Services</h1>
             <span className=" hidden h-0.5 bg-white lg:mr-3 lg:flex lg:w-40 xl:flex xl:w-52" />
           </header>
           <main className="lg:grid lg:grid-cols-3 lg:gap-x-6 xl:gap-x-10">
             {services.map((service, index) => (
-              <h3 key={index} className="leading-6 lg:w-max lg:text-base lg:leading-7 xl:text-lg xl:leading-7 ">
+              <h3 key={index} className="text-xs leading-6 lg:w-max lg:text-base lg:leading-7 xl:text-lg xl:leading-7 ">
                 {service}
               </h3>
             ))}
@@ -78,7 +79,7 @@ const Footer = () => {
       </section>
       <section className="flex w-full flex-col items-center justify-end">
         <span className="mb-6 h-0.5 w-[356px] bg-white lg:hidden xl:hidden" />
-        <p className="flex text-lg">Copyright © codeation 2022</p>
+        <p className="flex lg:text-lg">Copyright © codeation 2022</p>
       </section>
     </footer>
   );

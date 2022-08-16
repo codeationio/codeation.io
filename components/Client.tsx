@@ -17,7 +17,7 @@ const Client: FC<ClientProps> = ({ height, logo, name, width }) => {
 };
 
 Client.defaultProps = {
-  height: 101,
-  width: 101,
+  height: 71,
+  width: 71,
 };
 export default Client;

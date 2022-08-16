@@ -51,7 +51,7 @@ const Testimonial = () => {
   return (
     <div className="flex flex-col justify-between lg:flex-row xl:flex-row">
       <div className="flex flex-col justify-center gap-y-7 lg:min-w-fit xl:min-w-fit ">
-        <h1 className="max-w-sm text-2xl font-semibold text-secondary lg:text-4xl xl:text-4xl">
+        <h1 className="max-w-sm text-base font-semibold text-secondary lg:text-4xl xl:text-4xl">
           DON’T JUST TAKE OUR WORD FOR US, LET OUR CLIENTS TELL OUR STORY
         </h1>
         <div className="flex items-center !space-x-2">
@@ -65,7 +65,7 @@ const Testimonial = () => {
               <Image alt="right_arrow" height={52} src="/images/right_arrow.svg" width={52} />
             </a>
           </Link>
-          <p className="mb-2 text-lg text-description">There are many more</p>
+          <p className="mb-2 text-xs text-description">There are many more</p>
         </div>
       </div>
       <div className="carousel justify-start gap-x-4 py-20 lg:ml-20">

@@ -10,8 +10,8 @@ export type RecentWorkProps = {
 
 const RecentWork: FC<RecentWorkProps> = ({ description, imageUrl, platforms, title }) => {
   return (
-    <div className="flex min-h-[650px] gap-x-10 gap-y-10">
-      <h2 className="text-2xl font-semibold text-secondary lg:hidden lg:text-3xl xl:text-4xl">{title}</h2>
+    <div className="flex gap-x-10 gap-y-5 lg:min-h-[650px] lg:gap-y-10">
+      <h2 className="text-xl font-semibold text-secondary lg:hidden lg:text-3xl xl:text-4xl">{title}</h2>
       <div className="overflow-hidden rounded-lg lg:w-1/2 xl:w-1/2">
         <figure>
           <Image alt={title} className="object-cover" height={540} src={imageUrl} width={696} />
@@ -19,10 +19,10 @@ const RecentWork: FC<RecentWorkProps> = ({ description, imageUrl, platforms, tit
       </div>
       <div className="flex !w-full flex-col items-start gap-y-5 lg:!w-1/2  xl:!w-1/2 ">
         <h2 className="hidden text-2xl font-semibold text-secondary lg:block lg:text-3xl xl:text-4xl">{title}</h2>
-        <p className="w-full text-lg text-grey lg:text-lg">{description}</p>
-        <div className="flex text-lg text-grey">
+        <p className="w-full text-sm text-grey lg:text-lg">{description}</p>
+        <div className="flex text-base text-grey lg:text-lg">
           Platforms:
-          <span className="ml-4 flex gap-x-3 text-lg font-bold text-primary">
+          <span className="ml-4 flex gap-x-3 text-sm font-bold text-primary lg:text-lg">
             <p>{platforms.join(', ')}</p>
           </span>
         </div>
