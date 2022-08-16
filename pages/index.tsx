@@ -1,4 +1,5 @@
 import Hero from 'components/Hero';
+import Meta from 'components/Meta';
 import Navbar from 'components/Navbar';
 import Section from 'components/Section';
 import SkeletonLoading from 'components/SkeletonLoading';
@@ -29,9 +30,15 @@ const TestimonialSection = dynamic(() => import('sections/TestimonialSection'), 
   suspense: true,
 });
 
+const meta = [
+  { content: 'BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS', name: 'description' },
+  { content: 'Web development, App Development, Mobile, Data Science, Dashboards, Analytics', name: 'keywords' },
+];
+
 const Index: FC = () => {
   return (
     <>
+      <Meta meta={meta} />
       <Suspense fallback={<SkeletonLoading />}>
         <Wrapper>
           <Section head>
