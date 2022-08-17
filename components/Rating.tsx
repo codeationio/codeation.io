@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, memo } from 'react';
 
 const Rating: FC<{ rating: number }> = ({ rating }) => {
   return (
@@ -14,4 +14,4 @@ const Rating: FC<{ rating: number }> = ({ rating }) => {
   );
 };
 
-export default Rating;
+export default memo(Rating);
