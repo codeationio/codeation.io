@@ -17,7 +17,7 @@ export type TestimonialProps = {
 const TestimonialCard: FCC<TestimonialProps> = ({ company, description, designation, id, name, rating, url }) => {
   return (
     <Card
-      className="carousel-item flex min-w-fit scroll-m-16 flex-col items-center justify-center gap-y-2 bg-white p-5 pt-0 lg:w-80 xl:w-80 xl:min-w-fit xl:pb-14 [&>span]:!overflow-visible"
+      className="carousel-item flex min-w-fit scroll-m-16 flex-col items-center justify-center gap-y-1 bg-white p-4 pt-0 lg:w-80 xl:w-80 xl:min-w-fit xl:pb-6 [&>span]:!overflow-visible"
       id={id}>
       {/* <Image
         alt={`${name}${company ? ` | ${company}` : ''}`}

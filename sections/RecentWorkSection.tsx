@@ -22,12 +22,12 @@ const workArr: RecentWorkProps[] = [
 
 const RecentWorkSection = () => (
   <Section
-    className="space-y-10 [&>*]:flex-col lg:[&>*:nth-child(odd)]:flex-row xl:[&>*:nth-child(odd)]:flex-row lg:[&>*:nth-child(even)]:flex-row-reverse xl:[&>*:nth-child(even)]:flex-row-reverse"
+    className="space-y-20 [&>*]:flex-col lg:[&>*:nth-child(odd)]:flex-row xl:[&>*:nth-child(odd)]:flex-row lg:[&>*:nth-child(even)]:flex-row-reverse xl:[&>*:nth-child(even)]:flex-row-reverse"
     title="Recent Work">
     {workArr?.map((item, index) => (
       <RecentWork key={index} description={item.description} imageUrl={item.imageUrl} platforms={item.platforms} title={item.title} />
     ))}
-    <p className="text-xs text-secondary">
+    <p className="m-0 text-xs text-secondary">
       {/* Add Star before please */}
       &#9733; Please note that the images shown above are not to be taken as product images. These images are used purely for illustration
       purposes.

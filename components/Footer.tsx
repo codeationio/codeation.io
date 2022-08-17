@@ -1,16 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-const services: string[] = [
-  'Software Development',
-  'Analytical Dashboard',
-  'AWS, GCP, Azure',
-  'Mobile App Development',
-  'UI / UX',
-  'Digital Marketing',
-  'Web Development',
-  'QA',
-  'ERM And Finance',
-];
+const servicesList1: string[] = ['Software Development', 'App Development', 'Web Development'];
+const servicesList2: string[] = ['Dashboard', 'UI / UX', 'QA'];
+const servicesList3: string[] = ['AWS, GCP, Azure', 'Digital Marketing', 'ERM And Finance'];
 
 const Footer = () => {
   return (
@@ -62,18 +54,34 @@ const Footer = () => {
             </main>
           </article>
         </div>
-        <article className="flex flex-col lg:gap-y-10 lg:leading-7 xl:gap-y-10 ">
+        <article className="flex flex-col lg:mr-5 lg:gap-y-10 lg:leading-7 xl:m-0 xl:gap-y-10 ">
           <header className="flex items-center justify-between lg:mt-10 xl:mt-10">
-            <span className="hidden h-0.5 bg-white lg:flex lg:w-40 xl:flex xl:w-52" />
+            <span className="hidden h-0.5 bg-white lg:flex lg:w-36 xl:flex xl:w-52" />
             <h1 className="-mt-1 mb-1 text-lg font-bold lg:m-0 lg:mb-4 lg:text-3xl xl:text-3xl">Services</h1>
-            <span className=" hidden h-0.5 bg-white lg:mr-3 lg:flex lg:w-40 xl:flex xl:w-52" />
+            <span className=" hidden h-0.5 bg-white lg:mr-3 lg:flex lg:w-36 xl:flex xl:w-52" />
           </header>
-          <main className="lg:grid lg:grid-cols-3 lg:gap-x-6 xl:gap-x-10">
-            {services.map((service, index) => (
-              <h3 key={index} className="text-xs leading-6 lg:w-max lg:text-base lg:leading-7 xl:text-lg xl:leading-7 ">
-                {service}
-              </h3>
-            ))}
+          <main className="lg:flex lg:flex-wrap lg:gap-x-10 xl:gap-x-24">
+            <div>
+              {servicesList1.map((service, index) => (
+                <h3 key={index} className="text-xs leading-6 lg:w-max lg:text-base lg:leading-7 xl:text-lg xl:leading-7 ">
+                  {service}
+                </h3>
+              ))}
+            </div>
+            <div>
+              {servicesList2.map((service, index) => (
+                <h3 key={index} className="text-xs leading-6 lg:w-max lg:text-base lg:leading-7 xl:text-lg xl:leading-7 ">
+                  {service}
+                </h3>
+              ))}
+            </div>
+            <div>
+              {servicesList3.map((service, index) => (
+                <h3 key={index} className="text-xs leading-6 lg:w-max lg:text-base lg:leading-7 xl:text-lg xl:leading-7 ">
+                  {service}
+                </h3>
+              ))}
+            </div>
           </main>
         </article>
       </section>

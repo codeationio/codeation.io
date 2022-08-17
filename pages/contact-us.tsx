@@ -52,7 +52,7 @@ const ContactUs = () => (
         img="/images/contact-hero.svg"
         title="Contact Us"
       />
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-x-20">
         <Section className="order-2 grid gap-y-10 md:order-1">
           <header>
             <h2 className="w-full text-lg font-semibold capitalize text-secondary md:w-3/4 lg:text-4xl xl:text-4xl ">
@@ -64,8 +64,8 @@ const ContactUs = () => (
               {questions.map(({ answer, id, question }) => (
                 <li key={id} className="mb-10 ml-6 -translate-y-5 space-y-2 font-khula last:mb-0">
                   <span className="absolute -left-[1.8rem] flex h-2 w-2 translate-y-2 items-center justify-center rounded-full bg-primary ring-4 ring-white dark:bg-primary dark:ring-primary" />
-                  <h3 className="text-5.5 capitalize text-secondary">{question}</h3>
-                  <summary className="text-lg capitalize text-description">{answer}</summary>
+                  <h3 className="text-5.5  text-secondary">{question}</h3>
+                  <summary className="text-base  text-description">{answer}</summary>
                 </li>
               ))}
             </ol>

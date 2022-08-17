@@ -10,7 +10,7 @@ export type RecentWorkProps = {
 
 const RecentWork: FC<RecentWorkProps> = ({ description, imageUrl, platforms, title }) => {
   return (
-    <div className="flex gap-x-10 gap-y-5 lg:min-h-[650px] lg:gap-y-10">
+    <div className="flex gap-x-8 gap-y-5 lg:min-h-fit lg:gap-y-10">
       <h2 className="text-xl font-semibold text-secondary lg:hidden lg:text-3xl xl:text-4xl">{title}</h2>
       <div className="overflow-hidden rounded-lg lg:w-1/2 xl:w-1/2">
         <figure>

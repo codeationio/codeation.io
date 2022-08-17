@@ -15,7 +15,7 @@ const Section: FCC<SectionProps> = ({ children, className, head, id, title }) =>
   return (
     <section className="scroll-m-12" id={id}>
       {title && (
-        <header className="mb-8 lg:mb-10 xl:mb-10">
+        <header className="mb-8 lg:mb-20 xl:mb-20">
           <h1 className="border-underline relative text-center text-3xl font-bold capitalize text-primary lg:text-5xl xl:text-5xl">
             {title}
           </h1>
@@ -42,13 +42,13 @@ export type TwoColSectionProps = {
 
 export const TwoColSection: FC<TwoColSectionProps> = ({ content, img, reverse = false, title }) => (
   <Section key={title} className="grid lg:grid-cols-2 xl:grid-cols-2" title={title}>
-    <article className={reverse ? 'order-2' : 'order-1'}>
-      <figure className="mx-6 flex -translate-y-10 justify-center">
+    <article className={reverse ? 'order-2 flex flex-col  justify-center' : 'order-1 flex flex-col  justify-center'}>
+      <figure className="mr-10 flex -translate-y-20 flex-col ">
         <Image height={420} src={img} width={420} />
       </figure>
     </article>
     <article className={reverse ? 'order-1' : 'order-2'}>
-      <p className="font-khula text-lg font-normal capitalize leading-9 text-grey lg:text-2xl xl:text-2xl">{content}</p>
+      <p className="font-khula text-lg font-normal leading-9 text-grey lg:text-xl xl:text-xl">{content}</p>
     </article>
   </Section>
 );
