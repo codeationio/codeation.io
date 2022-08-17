@@ -1,9 +1,9 @@
 import Footer from 'components/Footer';
 import { HeroType2 } from 'components/Hero';
+import Meta from 'components/Meta';
 import Section from 'components/Section';
 import Wrapper from 'components/Wrapper';
 import dynamic from 'next/dynamic';
-import Head from 'next/head';
 
 const Contact = dynamic(() => import('sections/contact'), { suspense: true });
 
@@ -39,11 +39,14 @@ const questions = [
   },
 ];
 
+const meta = [
+  { content: 'BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS', name: 'description' },
+  { content: 'Web development, App Development, Mobile, Data Science, Dashboards, Analytics', name: 'keywords' },
+];
+
 const ContactUs = () => (
   <>
-    <Head>
-      <title>Contact us | Codeation.io</title>
-    </Head>
+    <Meta meta={meta} title="Contact us | Codeation.io" />
 
     <Wrapper className="alternate [&>div:first-child]:bg-cover [&>div:first-child]:bg-no-repeat [&>*:first-child]:bg-[url('/images/contact-us.png')]">
       <HeroType2

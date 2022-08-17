@@ -10,7 +10,7 @@ export type ClientProps = {
 
 const Client: FC<ClientProps> = ({ height, logo, name, width }) => {
   return (
-    <figure className="flex h-full w-full max-w-[150px] items-center justify-evenly">
+    <figure className="flex h-full w-full max-w-[90px] items-center justify-evenly md:max-w-[150px]">
       <Image alt={name} height={height} src={logo} width={width} />
     </figure>
   );
