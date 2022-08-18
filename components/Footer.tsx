@@ -7,7 +7,7 @@ const servicesList3: string[] = ['AWS, GCP, Azure', 'Digital Marketing', 'ERM An
 const Footer = () => {
   return (
     <footer className="text-white">
-      <section className="mb-7 grid grid-cols-2 flex-row xl:gap-10">
+      <section className="mb-7 grid grid-cols-2 flex-row lg:mr-6 xl:mr-12 xl:gap-10">
         <div className="ml-5 flex flex-col justify-evenly lg:m-0 lg:!flex-row xl:m-0 xl:!flex-row">
           <article className="flex flex-col gap-y-4">
             <figure className="mr-5 lg:mt-10 lg:-ml-1  xl:mt-10   xl:-ml-1">
@@ -53,7 +53,7 @@ const Footer = () => {
             </main>
           </article>
         </div>
-        <article className="flex flex-col lg:mr-5 lg:gap-y-10 lg:leading-7 xl:m-0 xl:gap-y-10 ">
+        <article className="flex flex-col lg:gap-y-10 lg:leading-7 xl:m-0  xl:gap-y-6 ">
           <header className="flex items-center justify-between lg:mt-10 xl:mt-10">
             <span className="hidden h-0.5 bg-white lg:flex lg:w-36 xl:flex xl:w-52" />
             <h1 className="-mt-1 mb-1 text-lg font-bold lg:m-0 lg:mb-4 lg:text-3xl xl:text-3xl">Services</h1>

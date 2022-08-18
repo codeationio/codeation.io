@@ -31,7 +31,9 @@ const OurValues = () => (
       <Card key={id} shadow={false}>
         <RoundedIcon className="mx-auto my-12" icon={icon} />
         <CardTitle>{title}</CardTitle>
-        <CardDescription className="block w-full max-w-fit text-5.5 leading-9 lg:text-justify xl:text-justify">{content}</CardDescription>
+        <CardDescription className="block w-full max-w-fit text-5.5 leading-9 text-grey lg:text-justify xl:text-justify">
+          {content}
+        </CardDescription>
       </Card>
     ))}
   </Section>
