@@ -13,6 +13,10 @@ body {
   --stage-text: 'Planning';
 }
 
+img {
+  @apply pointer-events-none select-none;
+}
+
 @keyframes chatBubble {
   0% {
     bottom: 36.5%;
@@ -115,7 +119,7 @@ span.chat-bubble {
 }
 
 #stage-text {
-  @apply invisible absolute -bottom-2 lg:bottom-2 left-1/2 w-0 after:visible after:absolute after:top-0 after:right-0 after:translate-x-1/2 after:text-xl after:font-medium after:text-primary after:content-[var(--stage-text)] md:after:text-3xl xl:after:text-4xl;
+  @apply invisible absolute -bottom-2 left-1/2 w-0 after:visible after:absolute after:top-0 after:right-0 after:translate-x-1/2 after:text-xl after:font-medium after:text-primary after:content-[var(--stage-text)] md:after:text-3xl lg:bottom-2 xl:after:text-4xl;
 
   // &:after {
   //   content: var(--stage-text);
