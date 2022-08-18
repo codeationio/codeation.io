@@ -9,7 +9,8 @@ export type MetaProps = {
 export const Meta: FCC<MetaProps> = ({ children, meta, title }) => {
   return (
     <Head>
-      <title>{title ?? 'Web Development, App Development - Codeation.io'}</title>
+      <title>{title ?? 'Codeation.io'}</title>
+      {/* <title>{title ?? 'Web Development, App Development - Codeation.io'}</title> */}
       {meta.map((m) => (
         <meta key={m.name} {...m} />
       ))}
