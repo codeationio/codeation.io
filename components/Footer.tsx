@@ -10,9 +10,8 @@ const Footer = () => {
       <section className="mb-7 grid grid-cols-2 flex-row xl:gap-10">
         <div className="ml-5 flex flex-col justify-evenly lg:m-0 lg:!flex-row xl:m-0 xl:!flex-row">
           <article className="flex flex-col gap-y-4">
-            <figure className="lg:mt-10 lg:-ml-1 xl:mt-10 xl:-ml-1">
-              {/* <Image alt="Codeation.io" height={28} src="/images/footer_logo.svg" width={267} /> */}
-              <img alt="Codeation.io" className="h-4 lg:h-7" src="/images/footer_logo.svg" />
+            <figure className="mr-5 lg:mt-10 lg:-ml-1  xl:mt-10   xl:-ml-1">
+              <Image alt="Codeation.io" height={28} src="/images/footer_logo.svg" width={267} />
             </figure>
             <p className="flex items-end text-xs leading-5 lg:col-span-4 lg:text-lg xl:col-span-4 xl:text-lg">
               3rd Floor, F-88 , Phase 7,
@@ -29,7 +28,7 @@ const Footer = () => {
                   <figure className="h-7 w-8">
                     <Image
                       alt="linkdin"
-                      // className="hover:bg-primary"
+                      // className="hover:text-primary"
                       height={20}
                       src="/images/linkedin.svg"
                       width={35}

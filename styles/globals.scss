@@ -115,7 +115,7 @@ span.chat-bubble {
 }
 
 #stage-text {
-  @apply invisible absolute -bottom-4 lg:-bottom-10 left-1/2 w-0 after:visible after:absolute after:top-0 after:right-0 after:translate-x-1/2 after:text-xl after:font-medium after:text-primary after:content-[var(--stage-text)] md:after:text-3xl xl:after:text-4xl;
+  @apply invisible absolute -bottom-2 lg:bottom-2 left-1/2 w-0 after:visible after:absolute after:top-0 after:right-0 after:translate-x-1/2 after:text-xl after:font-medium after:text-primary after:content-[var(--stage-text)] md:after:text-3xl xl:after:text-4xl;
 
   // &:after {
   //   content: var(--stage-text);

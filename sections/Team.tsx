@@ -23,7 +23,7 @@ const teamArr: TeamCardProps[] = [
 
 const Team = () => {
   return (
-    <Section className="grid grid-cols-3 gap-5 xl:gap-0" title="Our core team">
+    <Section className="grid grid-cols-2 gap-5 lg:grid-cols-2 xl:gap-0" title="Our core team">
       {teamArr.map((item, index) => (
         <TeamCard key={index} description={item.description} name={item.name} post={item.post} url={item.url} />
       ))}

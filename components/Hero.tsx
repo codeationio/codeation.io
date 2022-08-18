@@ -22,7 +22,7 @@ const Hero: FC = () => {
           A trusted agency for your business needs <br /> Invest in the right service and solution
         </p>
       </div>
-      <ProcessAnimation height={500} width={500} />
+      <ProcessAnimation height={450} width={450} />
     </Section>
   );
 };

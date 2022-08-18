@@ -21,7 +21,9 @@ Card.defaultProps = {
 export const CardTitle: FCC = ({ children, className }) => {
   return (
     <h2
-      className={`text-center text-card-title-sm font-bold capitalize text-primary lg:mt-4 xl:mb-3  xl:text-card-title ${className ?? ''}`}>
+      className={`text-center text-xs font-bold capitalize text-primary lg:mt-4 lg:text-card-title-sm xl:mb-3  xl:text-card-title ${
+        className ?? ''
+      }`}>
       {children}
     </h2>
   );

@@ -10,10 +10,10 @@ const ProcessAnimationBase: FC<Pick<ImageProps, 'height' | 'width'>> = ({ height
 
   return (
     <div className="relative mt-2 flex items-center justify-end">
-      <figure className="aspect-square md:m-0 md:-translate-y-[8vh]">
+      <figure className="mt-20 aspect-square md:m-0 md:-translate-y-[8vh]">
         <Image
           alt="Codeation way of doing things."
-          className="aspect-square max-h-[calc(100vh_-_8rem_-_10vh)] md:min-h-[500px]"
+          className="aspect-square max-h-[calc(100vh_-_9rem_-_10vh)] md:min-h-[500px]"
           height={height}
           loading="eager"
           src="/images/hero-section-img.svg"
