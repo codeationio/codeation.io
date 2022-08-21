@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 import { FormEventHandler, useState } from 'react';
 import { isValidEmail } from 'utils';
 
@@ -62,7 +62,7 @@ const GetInTouch = () => {
               className="flex items-center justify-center rounded-r-lg bg-primary px-7 disabled:opacity-70"
               disabled={loading || submitted}
               type="submit">
-              <Image alt="Get in touch" height="100%" src="/images/send_icon.svg" width="28px" />
+              <Image alt="Get in touch" className="h-full" height="28" src="/images/send_icon.svg" width="28" />
             </button>
           </div>
           {submitted && (

@@ -1,5 +1,5 @@
 import { FCC } from 'globalTypes';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import { FC, ReactNode, Suspense } from 'react';
 
 import SkeletonLoading from './SkeletonLoading';

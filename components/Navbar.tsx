@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 import Link from 'next/link';
 const Navbar = () => {
   return (
@@ -7,13 +7,12 @@ const Navbar = () => {
         <a>
           <figure className="flex">
             <Image
-              alt="Codeation.io"
+              alt="Codeation.io - BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS"
               className="alternate:brightness-0  alternate:invert"
               height={20}
               src="/images/codeation.io.svg"
               width={187}
             />
-            <figcaption className="hidden">Codeation.io - BRIDGING THE GAP BETWEEN TECHNOLOGY AND BUSINESS</figcaption>
           </figure>
         </a>
       </Link>

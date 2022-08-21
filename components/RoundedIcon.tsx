@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/future/image';
 
 export type RoundedIconProps = {
   icon: string;

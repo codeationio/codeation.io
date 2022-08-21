@@ -1,5 +1,5 @@
 import Image from 'next/future/image';
-import { ImageProps } from 'next/image';
+import { ImageProps } from 'next/future/image';
 import { FC, memo, useState } from 'react';
 
 import ChatBubble from './ChatBubble';

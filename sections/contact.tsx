@@ -1,6 +1,6 @@
 import Button from 'components/Button';
 import Input from 'components/input';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import { FormEventHandler, useState } from 'react';
 
 const Contact = () => {

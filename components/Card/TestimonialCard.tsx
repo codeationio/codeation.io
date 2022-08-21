@@ -23,6 +23,7 @@ const TestimonialCard: FCC<TestimonialProps> = ({ company, description, designat
         alt={`${name}${company ? ` | ${company}` : ''}`}
         className="h-24 w-24 -translate-y-16 rounded-full object-fill lg:h-32 lg:w-32"
         height={96}
+        loading="lazy"
         src={url}
         width={132}
       />
