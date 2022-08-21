@@ -1,8 +1,17 @@
 import Image from 'next/image';
 import Link from 'next/link';
-const servicesList1: string[] = ['Software Development', 'App Development', 'Web Development'];
-const servicesList2: string[] = ['Dashboard', 'UI / UX', 'QA'];
-const servicesList3: string[] = ['AWS, GCP, Azure', 'Digital Marketing', 'ERM And Finance'];
+
+const services = [
+  'Software Development',
+  'Dashboard',
+  'AWS, GCP, Azure',
+  'App Development',
+  'UI / UX',
+  'QA',
+  'Web Development',
+  'Digital Marketing',
+  'ERM And Finance',
+];
 
 const Footer = () => {
   return (
@@ -13,7 +22,7 @@ const Footer = () => {
             <figure className="mr-5 lg:mt-10 lg:-ml-1  xl:mt-10   xl:-ml-1">
               <Image alt="Codeation.io" height={28} src="/images/footer_logo.svg" width={267} />
             </figure>
-            <p className="flex items-end text-xs leading-5 lg:col-span-4 lg:text-lg xl:col-span-4 xl:text-lg">
+            <p className="flex items-end text-xs leading-5 lg:col-span-4 lg:text-lg xl:col-span-4">
               3rd Floor, F-88 , Phase 7,
               <br /> Industrial Area, Sector 73,
               <br /> SAS nagar, Punjab,
@@ -53,34 +62,18 @@ const Footer = () => {
             </main>
           </article>
         </div>
-        <article className="flex flex-col lg:gap-y-10 lg:leading-7 xl:m-0  xl:gap-y-6 ">
+        <article className="flex flex-col lg:gap-y-10 xl:m-0  xl:gap-y-6 ">
           <header className="flex items-center justify-between lg:mt-10 xl:mt-10">
             <span className="hidden h-0.5 bg-white lg:flex lg:w-36 xl:flex xl:w-52" />
-            <h1 className="-mt-1 mb-1 text-lg font-bold lg:m-0 lg:mb-4 lg:text-3xl xl:text-3xl">Services</h1>
+            <h1 className="mb-1 text-lg font-bold lg:m-0 lg:mb-4 lg:text-3xl">Services</h1>
             <span className=" hidden h-0.5 bg-white lg:mr-3 lg:flex lg:w-36 xl:flex xl:w-52" />
           </header>
-          <main className="lg:flex lg:flex-wrap lg:gap-x-10 xl:gap-x-24">
-            <div>
-              {servicesList1.map((service, index) => (
-                <h3 key={index} className="text-xs leading-6 lg:w-max lg:text-base lg:leading-7 xl:text-lg xl:leading-7 ">
-                  {service}
-                </h3>
-              ))}
-            </div>
-            <div>
-              {servicesList2.map((service, index) => (
-                <h3 key={index} className="text-xs leading-6 lg:w-max lg:text-base lg:leading-7 xl:text-lg xl:leading-7 ">
-                  {service}
-                </h3>
-              ))}
-            </div>
-            <div>
-              {servicesList3.map((service, index) => (
-                <h3 key={index} className="text-xs leading-6 lg:w-max lg:text-base lg:leading-7 xl:text-lg xl:leading-7 ">
-                  {service}
-                </h3>
-              ))}
-            </div>
+          <main className="grid grid-cols-1 md:grid-cols-2 lg:gap-x-10 xl:grid-cols-3 xl:gap-x-24">
+            {services.map((service) => (
+              <h3 key={service} className="text-xs leading-6 lg:w-max lg:text-lg xl:leading-7 ">
+                {service}
+              </h3>
+            ))}
           </main>
         </article>
       </section>

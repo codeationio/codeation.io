@@ -21,7 +21,7 @@ const Section: FCC<SectionProps> = ({ children, className, head, id, title }) =>
           </h1>
         </header>
       )}
-      <main className={`${head ? '' : 'p-4 '}${className}`}>
+      <main className={`${head ? 'px-4' : 'p-4 '}${className}`}>
         <Suspense fallback={<SkeletonLoading />}>{children}</Suspense>
       </main>
     </section>
