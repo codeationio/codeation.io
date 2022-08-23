@@ -10,6 +10,7 @@ body {
   --fill-blue-secondary: #387de5;
   --fill-red-primary: #ff9191;
   --fill-red-secondary: #e26161;
+
   --stage-text: 'Planning';
 }
 
@@ -19,60 +20,72 @@ img {
 
 @keyframes chatBubble {
   0% {
-    bottom: 36.5%;
-    left: 0.4%;
-    --stage-text: 'Planning';
+    bottom: 38.5%;
+    left: 0%;
+    --stage-text: 'Planing';
   }
 
   14.29% {
-    bottom: 30.5%;
-    left: 14%;
+    bottom: 32.5%;
+    left: 13.5%;
     --fill-current-primary: var(--fill-blue-primary);
     --fill-current-secondary: var(--fill-blue-secondary);
-    --stage-text: 'Planning';
+    --stage-text: 'Planing';
   }
 
   28.57% {
-    bottom: 30%;
-    left: 81%;
+    bottom: 33%;
+    left: 81.5%;
     --fill-current-primary: var(--fill-red-primary);
     --fill-current-secondary: var(--fill-red-secondary);
     --stage-text: 'Analysis';
   }
 
   42.86% {
-    bottom: 56%;
-    left: 88%;
+    bottom: 56.5%;
+    left: 88.3%;
     --fill-current-primary: var(--fill-blue-primary);
     --fill-current-secondary: var(--fill-blue-secondary);
   }
 
   57.14% {
-    bottom: 95%;
-    left: 60.4%;
+    bottom: 92%;
+    left: 59.5%;
     --fill-current-primary: var(--fill-blue-primary);
     --fill-current-secondary: var(--fill-blue-secondary);
     --stage-text: 'Developing';
   }
 
   71.43% {
-    bottom: 103%;
-    left: 41.6%;
+    bottom: 100%;
+    left: 41%;
     --fill-current-primary: var(--fill-red-primary);
     --fill-current-secondary: var(--fill-red-secondary);
   }
   85.71% {
-    bottom: 82%;
-    left: 5.5%;
+    bottom: 81%;
+    left: 4.8%;
     --fill-current-primary: var(--fill-blue-primary);
     --fill-current-secondary: var(--fill-blue-secondary);
     --stage-text: 'Testing';
   }
   100% {
-    bottom: 36.5%;
-    left: 0.4%;
+    bottom: 38.5%;
+    left: 0%;
     --stage-text: 'Delivery';
   }
+}
+
+span.chat-bubble {
+  --fill-current-primary: var(--fill-red-primary);
+  --fill-current-secondary: var(--fill-red-secondary);
+  @apply absolute scale-[.74] md:scale-100;
+  bottom: 39%;
+  left: 0%;
+}
+
+.animate-chat-bubble {
+  animation: chatBubble 15000ms infinite;
 }
 
 .nav-item {
@@ -98,24 +111,12 @@ summary {
   @apply before:absolute before:-bottom-4 before:left-1/2 before:w-40 before:-translate-x-1/2 before:border-b-2  before:content-['_'];
 }
 
-span.chat-bubble {
-  --fill-current-primary: var(--fill-red-primary);
-  --fill-current-secondary: var(--fill-red-secondary);
-  @apply absolute scale-[.74] md:scale-100;
-  bottom: 36.5%;
-  left: 0.4%;
-}
-
 .fill-primary {
   fill: var(--fill-current-primary);
 }
 
 .fill-secondary {
   fill: var(--fill-current-secondary);
-}
-
-.animate-chat-bubble {
-  animation: chatBubble 15000ms infinite;
 }
 
 #stage-text {

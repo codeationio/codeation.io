@@ -1,5 +1,5 @@
 import Image from 'next/future/image';
-import { ImageProps } from 'next/future/image';
+import { ImageProps } from 'next/image';
 import { FC, memo, useState } from 'react';
 
 import ChatBubble from './ChatBubble';
@@ -10,7 +10,7 @@ const ProcessAnimationBase: FC<Pick<ImageProps, 'height' | 'width'>> = ({ height
 
   return (
     <div className="relative mt-2 flex items-center justify-end">
-      <figure className="mt-20 aspect-square md:m-0 md:-translate-y-[8vh]">
+      <figure className="aspect-square md:m-0 md:-translate-y-[8vh]">
         <Image
           alt="Codeation way of doing things."
           className="aspect-square max-h-[calc(100vh_-_9rem_-_10vh)] md:min-h-[500px]"
