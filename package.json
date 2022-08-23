@@ -1,6 +1,6 @@
 {
   "name": "codeation-io",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "repository": {
     "type": "git",
@@ -17,28 +17,28 @@
   },
   "dependencies": {
     "@types/grecaptcha": "^3.0.4",
-    "autoprefixer": "^10.4.7",
-    "googleapis": "^105.0.0",
+    "autoprefixer": "^10.4.8",
+    "googleapis": "^107.0.0",
     "lodash": "^4.17.21",
     "next": "latest",
-    "postcss": "^8.4.14",
+    "postcss": "^8.4.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-star-ratings": "^2.3.0",
-    "sass": "^1.53.0",
-    "tailwindcss": "^3.1.6"
+    "sass": "^1.54.5",
+    "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.182",
-    "@types/node": "^18.0.3",
-    "@types/react": "^18.0.15",
+    "@types/lodash": "^4.14.184",
+    "@types/node": "^18.7.8",
+    "@types/react": "^18.0.17",
     "@types/react-big-calendar": "^0.38.1",
     "@types/react-star-ratings": "^2.3.0",
-    "@typescript-eslint/eslint-plugin": "^5.30.6",
-    "@typescript-eslint/parser": "^5.30.6",
-    "eslint": "^8.19.0",
+    "@typescript-eslint/eslint-plugin": "^5.33.1",
+    "@typescript-eslint/parser": "^5.33.1",
+    "eslint": "^8.22.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -47,7 +47,7 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "prettier-plugin-tailwindcss": "^0.1.12",
+    "prettier-plugin-tailwindcss": "^0.1.13",
     "typescript": "^4.7.4"
   },
   "lint-staged": {
