@@ -79,7 +79,7 @@ const Footer = () => {
       </section>
       <section className="flex w-full flex-col items-center justify-end">
         <span className="mb-6 h-0.5 w-[356px] bg-white lg:hidden xl:hidden" />
-        <p className="flex lg:text-lg">Copyright © codeation 2022</p>
+        <p className="flex lg:text-lg">Copyright © codeation {new Date().getFullYear()}</p>
       </section>
     </footer>
   );
