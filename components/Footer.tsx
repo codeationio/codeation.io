@@ -59,9 +59,6 @@ const Footer = () => {
               <div>
                 <Link href="/#services">Services</Link>
               </div>
-              <div>
-                <Link href="/privacy">Privacy</Link>
-              </div>
             </main>
           </article>
         </div>
