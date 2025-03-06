@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html className="scroll-smooth" lang="en">
       <Head>
-        <meta name="facebook-domain-verification" content="27x0m611oyiye9qxfbbf3gza53w09g" />
+        <meta content="27x0m611oyiye9qxfbbf3gza53w09g" name="facebook-domain-verification" />
       </Head>
       <body className="dark">
         <Main />
