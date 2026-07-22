@@ -23,10 +23,10 @@ const Footer = () => {
               <Image alt="Codeation.io" height={28} src="/images/footer_logo.svg" width={267} />
             </figure>
             <p className="flex items-end text-xs leading-5 lg:col-span-4 lg:text-lg xl:col-span-4">
-              3rd Floor, F-88 , Phase 7,
-              <br /> Industrial Area, Sector 73,
-              <br /> SAS nagar, Punjab,
-              <br /> India. 160055
+              Ground Floor ,
+              <br /> Near Mind Care Hospital,
+              <br /> Fatehgarh Sahib, Punjab,
+              <br /> India. 140406
             </p>
             <div className="flex items-start lg:items-center xl:items-center">
               {/* <figure className="h-7 w-8">
