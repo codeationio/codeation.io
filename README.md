@@ -1,4 +1,4 @@
-# Codeation.io main website.
+# Codeation.io public web
 
 ## [Codeation.io](https://codeation.io)
 ## Setup Instruction
@@ -7,5 +7,3 @@
 - run following commands
   ```
   git clone 
-
-
